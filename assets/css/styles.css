@@ -306,8 +306,8 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/gaming.jpg) no-repeat center top;
-	margin-top: -50px;
+	background: url(../img/puente.png) no-repeat center;
+	/* margin-top: -50px; */
 	padding-top: 120px;
 	text-align: center;
 	background-attachment: relative;
