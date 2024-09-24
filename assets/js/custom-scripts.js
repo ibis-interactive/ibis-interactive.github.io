@@ -8,10 +8,26 @@ $(document).ready(function(){
     });
 });
 
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
-})
+var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: '#navbarToggler'
+  })
 
 $('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
+    $('.navbar-toggler:visible').click();
 });
+
+$(".nav-item .nav-link").on("click", function(){
+    $(this).parent().addClass('active').siblings().removeClass('active');
+ });
+
+ 
+$(window).on('activate.bs.scrollspy', function(event){
+    $(event.relatedTarget).parent().addClass('active').siblings().removeClass('active');
+});
+
+
+
+//  document.addEventListener('activate.bs.scrollspy', function (event) {
+//     let activatedItem = event.relatedTarget;
+//     activatedItem.style.color = 'red';
+// });
