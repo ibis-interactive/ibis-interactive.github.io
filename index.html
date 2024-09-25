@@ -7,6 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="webthemez">
   <title>Ibis Interactive</title>
+  <link rel="shortcut icon" href="assets/img/logos/ico/logo.ico" type="image/x-icon">
 
   <!-- Bootstrap core CSS -->
   <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -69,7 +70,7 @@
       <div class="row white">
         <h2 class="centered">Acerca de Nosotros</h2>
         <hr>
-        <div class="col-md-6" id="imgContainer"> <img class="img-responsive" src="assets/img/logo.png"> </div>
+        <div class="col-md-6" id="imgContainer"> <img class="img-responsive" src="assets/img/logos/png/logo.png"> </div>
         <div class="col-md-6">
           <h3>¿Quiénes somos?</h3>
           <p>Lorem ipsum dolor sit amet, quo meis audire placerat eu, te eos porro veniam. An everti maiorum detracto
@@ -105,7 +106,7 @@
               <figure> <img class="img-responsive" src="assets/img/portfolio/youre-next.png" alt="">
                 <figcaption>
                   <h5>You're Next</h5>
-                  <a data-toggle="modal" href="#myModal" class="btn btn-default">Detalles</a>
+                  <span data-bs-toggle="modal" data-bs-target="#yourenext" class="btn btn-default">Detalles</span>
                 </figcaption>
                 <!-- /figcaption -->
               </figure>
@@ -114,23 +115,20 @@
             <!-- /grid-overlay -->
           </div>
 
-          <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-            aria-hidden="true">
+          <div class="modal fade" id="yourenext" tabindex="-1" aria-hidden="true" arial-labelledby="yourenext" >
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <h4 class="modal-title">sadasdasd</h4>
+                  <h4 class="modal-title">You're Next</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                  <p><img class="img-responsive" src="assets/img/portfolio/folio01-preview.jpg" alt=""></p>
-                  <p>Lorem ipsum dolor sit amet, quo meis audire placerat eu, te eos porro veniam. An everti maiorum
-                    detracto mea. </p>
+                <div class="modal-body centered">
+                  <p><img class="img-responsive" src="assets/img/portfolio/youre-next.png" alt=""></p>
+                  <p>Juego desarrollado para la JAM de Halloween de 2023</p>
                 </div>
               </div>
             </div>
-          </div> -->
-          <!-- /.modal -->
+          </div> 
 
           <!-- PORTFOLIO IMAGE 2 -->
           <div class="col-md-4">
@@ -138,7 +136,7 @@
               <figure> <img class="img-responsive" src="assets/img/portfolio/opening-night.png" alt="">
                 <figcaption>
                   <h5>Opening Night</h5>
-                  <a data-toggle="modal" href="#myModal" class="btn btn-default">Detalles</a>
+                  <span data-bs-toggle="modal" data-bs-target="#openingnight" class="btn btn-default">Detalles</span>
                 </figcaption>
                 <!-- /figcaption -->
               </figure>
@@ -147,13 +145,28 @@
             <!-- /grid-overlay -->
           </div>
 
+          <div class="modal fade" id="openingnight" tabindex="-1" aria-hidden="true" arial-labelledby="openingnight">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Opening Night</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body centered">
+                  <p><img class="img-responsive" src="assets/img/portfolio/opening-night.png" alt=""></p>
+                  <p>Juego desarrollado para la JAM de Misterio??? de 2023</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+
           <!-- PORTFOLIO IMAGE 3 -->
           <div class="col-md-4">
             <div class="grid overlay">
               <figure> <img class="img-responsive" src="assets/img/portfolio/don-pepe.png" alt="">
                 <figcaption>
                   <h5>Don Pepe y sus globos</h5>
-                  <a data-toggle="modal" href="#myModal" class="btn btn-default">Detalles</a>
+                  <span data-bs-toggle="modal" data-bs-target="#donpepe" class="btn btn-default">Detalles</span>
                 </figcaption>
                 <!-- /figcaption -->
               </figure>
@@ -161,6 +174,23 @@
             </div>
             <!-- /grid-overlay -->
           </div>
+
+          <div class="modal fade" id="donpepe" tabindex="-1" aria-hidden="true" arial-labelledby="donpepe">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Don Pepe y sus Globos</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body centered">
+                  <p><img class="img-responsive" src="assets/img/portfolio/don-pepe.png" alt=""></p>
+                  <p>Juego desarrollado para la Global Game JAM de 2024 (Tema: Hazme reir)</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+
+
         </div>
         <!-- /row -->
       </div>

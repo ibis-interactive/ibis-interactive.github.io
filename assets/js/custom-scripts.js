@@ -24,10 +24,3 @@ $(".nav-item .nav-link").on("click", function(){
 $(window).on('activate.bs.scrollspy', function(event){
     $(event.relatedTarget).parent().addClass('active').siblings().removeClass('active');
 });
-
-
-
-//  document.addEventListener('activate.bs.scrollspy', function (event) {
-//     let activatedItem = event.relatedTarget;
-//     activatedItem.style.color = 'red';
-// });
