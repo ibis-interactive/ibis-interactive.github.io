@@ -89,23 +89,24 @@ body {
 	background-color: #FFFFFF;
 	border-color: rgba(127, 90, 5, 1);
 	padding: 20px 0;
+	border-bottom: solid var(--main-color)
 }
 
 .navbar-inverse .navbar-collapse>.navbar-nav>li>a {
-	color: var(--dark-color);
+	color: var(--main-color);
 	border-radius: 15px 0px 15px 0px;
 }
 
 .navbar-inverse .navbar-collapse>.navbar-nav>li>a:hover,
 .navbar-inverse .navbar-collapse>.navbar-nav>li>a:focus {
-	color: var(--dark-color);
+	color: var(--main-color);
 }
 
 .navbar-inverse .navbar-collapse>.navbar-nav>.active>a,
 .navbar-inverse .navbar-collapse>.navbar-nav>.active>a:hover,
 .navbar-inverse .navbar-collapse>.navbar-nav>.active>a:focus {
 	color: #fff;
-	background-color: var(--dark-color);
+	background-color: var(--main-color);
 }
 
 .navbar-inverse .navbar-toggler {
@@ -319,12 +320,11 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/headwrap/puente-min.png) no-repeat center;
+	background: url(../img/headwrap/puente-min.png) no-repeat top;
 	/* margin-top: -50px; */
 	padding-top: 120px;
 	text-align: center;
 	background-attachment: relative;
-	background-position: center center;
 	min-height: 850px;
 	width: 100%;
 	-webkit-background-size: 100%;
@@ -339,8 +339,9 @@ a:after {
 }
 
 #headerwrap h1 {
-	color: var(--accent-color);
+	color: #FFFFFF;
 	font-size: 50px;
+	text-shadow: 0 0 5px var(--dark-color);
 	font-weight: 400;
 	text-align: center;
 	letter-spacing: 3px;
@@ -493,7 +494,7 @@ a:after {
 }
 
 #portfolio .btn-default {
-	background-color: var(--secondary-color);
+	background-color: var(--main-color);
 	color: white;
 	border-radius: 4px;
 	position: absolute;
@@ -581,7 +582,7 @@ a:after {
 }
 
 #footerwrap {
-	background: #080808;
+	background: var(--dark-color);
 	padding: 25px 0 15px 0;
 	border-bottom: 1px solid #ddd;
 	text-align: center;
@@ -792,4 +793,10 @@ screen and (max-device-width:1050px) {
 	#team img {
 		margin-top: 30px;
 	}
+}
+
+#logo
+{
+	width: 150px;
+	margin-top: 200px;
 }
