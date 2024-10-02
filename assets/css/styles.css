@@ -321,7 +321,7 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/headwrap/puente-min.png) no-repeat top;
+	background: url(../img/headwrap/bg/puente-min.png) no-repeat top;
 	/* margin-top: -50px; */
 	padding-top: 120px;
 	text-align: center;
@@ -585,7 +585,7 @@ a:after {
 #footerwrap {
 	background: var(--dark-color);
 	padding: 25px 0 15px 0;
-	border-bottom: 1px solid #ddd;
+	/* border-bottom: 1px solid #ddd; */
 	text-align: center;
 }
 
