@@ -113,7 +113,7 @@ body {
 	border-color: var(--dark-color);
 	background: var(--dark-color);
 	color: var(--accent-color);
-	
+
 }
 
 .tb {
@@ -149,6 +149,7 @@ body {
 	font-weight: 700;
 	letter-spacing: 1px;
 }
+
 .modal-body p {
 	color: var(--dark-color) !important;
 }
@@ -795,8 +796,7 @@ screen and (max-device-width:1050px) {
 	}
 }
 
-#logo
-{
+#logo {
 	width: 150px;
 	margin-top: 200px;
 }
