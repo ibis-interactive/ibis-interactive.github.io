@@ -1,0 +1,28 @@
+{
+    "games": [
+        {
+            "title": "You're Next",
+            "imgSrc": "assets/img/portfolio/youre-next.png",
+            "altText": "portfolio you're next",
+            "modalId": "yourenext",
+            "description": "Six friends meet up to party in a creepy, old mansion. What could go wrong? A lot - there are rumors and creepypastas gaining traction about a video game killer that's murdering people in the real world, leaving its signature mark. A warning to its next victim: YOU'RE NEXT.",
+            "link": "https://njaramillo.itch.io/youre-next"
+        },
+        {
+            "title": "Opening Night",
+            "imgSrc": "assets/img/portfolio/opening-night.png",
+            "altText": "portfolio opening night",
+            "modalId": "openingnight",
+            "description": "Tonight's performer, one 'Sleazy Harry', has dropped dead. Or well, not dead dead... But as good as dead, as he's been rendered unconscious. Someone spiked his drink and left him out cold, and it's young detective Sofia's job to find out who, and more importantly, why. <br> Armed with only her wit and her trusty notepad, Sofia must find out as much information as she can within the time limit, and choose carefully from her clues in order to expose the culprit.",
+            "link": "https://ibis-interactive.itch.io/opening-night"
+        },
+        {
+            "title": "Don Pepe y sus globos",
+            "imgSrc": "assets/img/portfolio/don-pepe.png",
+            "altText": "portfolio don pepe y sus globos",
+            "modalId": "donpepe",
+            "description": "Luego de recordar su trágico y violento pasado, a Don Pepe se le ocurrió una idea millonaria: canalizar esa violencia en globos... ¡de agua! <br> El gran torneo de globos de agua de Don Pepe ha reunido a los más hábiles combatientes del barrio, quienes llenarán y lanzarán sus globos de agua hasta que solo uno quede seco. ¿Quién ganará?",
+            "link": "https://ibis-interactive.itch.io/don-pepe-y-sus-globos"
+        }
+    ]
+}

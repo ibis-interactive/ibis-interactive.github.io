@@ -503,6 +503,12 @@ a:after {
 	right: 15px;
 }
 
+.btn-itchio {
+	background-color: var(--main-color);
+	color: white;
+	border-radius: 4px;
+}
+
 #contact {
 	background: #F4F4F4;
 	padding: 100px 0;
