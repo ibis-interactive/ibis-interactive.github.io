@@ -25,7 +25,7 @@ $(window).on('activate.bs.scrollspy', function (event) {
     $(event.relatedTarget).parent().addClass('active').siblings().removeClass('active');
 });
 
-$.getJSON('/assets/games.json', function (data) {
+$.getJSON('./assets/games.json', function (data) {
     console.log('reading json');
     const games = data.games;
     games.forEach(function (game) {
@@ -64,7 +64,7 @@ $.getJSON('/assets/games.json', function (data) {
     });
 });
 
-$.getJSON('/assets/team.json', function (data) {
+$.getJSON('./assets/team.json', function (data) {
     let teamMembers = data.teamMembers;
     teamMembers.forEach(member => {
         let links = '';
