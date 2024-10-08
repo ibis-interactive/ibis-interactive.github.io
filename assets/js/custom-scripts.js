@@ -34,7 +34,7 @@ $.getJSON('./assets/games.json', function (data) {
         const portfolioHtml = `
         <div class="col-12 col-md-6 col-xl-4 mb-4">
           <div class="grid overlay">
-            <figure> <img class="img-responsive" src="${game.imgSrc}" alt="${game.altText}">
+            <figure class="portfolio-card"> <img class="img-responsive" src="${game.imgSrc}" alt="${game.altText}">
               <figcaption>
                 <h5>${game.title}</h5>
                 <span data-bs-toggle="modal" data-bs-target="#${game.modalId}" class="btn btn-default">Detalles</span>
@@ -51,8 +51,8 @@ $.getJSON('./assets/games.json', function (data) {
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body centered">
-                <p><img class="img-responsive" src="${game.imgSrc}" alt="${game.altText}"></p>
-                <p>${game.description}</p>
+                <p><img class="img-responsive portfolio-card" src="${game.imgSrc}" alt="${game.altText}"></p>
+                <p class="modal-text">${game.description}</p>
                 <a href="${game.link}" class="btn btn-itchio">Jugar en itch.io</a>
               </div>
             </div>

@@ -1,12 +1,28 @@
 {
     "games": [
         {
-            "title": "You're Next",
+            "title": "Vinca's Magic Garden (DEMO)",
+            "imgSrc": "assets/img/portfolio/vinca.png",
+            "altText": "portfolio vincas magic garden",
+            "modalId": "vincasmagicgarden",
+            "description": "Vinca is a little witch that helps her grandma with herbs, potions and magic. She's been studying her grandma's books about flowers with great attention, and now Grandma thinks she's capable enough to treat patients on her own by collecting the required flowers and mixing potions. Help her to do so!<br>In Vinca's Magic Garden, you have to explore the nearby forest in search of flowers to make healing potions. Grandma's book on flowers contains useful information to guide Vinca in her quest. Once you've collected enough flowers, Vinca must brew and stir them in the cauldron to finish the potion.",
+            "link": "https://ibis-interactive.itch.io/vincas-magic-garden"
+        },
+        {
+            "title": "You're Next (DEMO)",
             "imgSrc": "assets/img/portfolio/youre-next.png",
             "altText": "portfolio you're next",
             "modalId": "yourenext",
             "description": "Six friends meet up to party in a creepy, old mansion. What could go wrong? A lot - there are rumors and creepypastas gaining traction about a video game killer that's murdering people in the real world, leaving its signature mark. A warning to its next victim: YOU'RE NEXT.",
             "link": "https://njaramillo.itch.io/youre-next"
+        },
+        {
+            "title": "Blade of the Overlord",
+            "imgSrc": "assets/img/portfolio/blade.png",
+            "altText": "portfolio blade of the overlord",
+            "modalId": "bladeoftheoverlord",
+            "description": "Robin, Connie and Jake are a group of friends that have played the Void Wars trading card game since they were kids. Now, older and facing more grown-up problems, they are drawn back to the card game after a nostalgic edition gets reprinted, including a very special card that is very dear to Robin: the famed Blade of the Overlord. The catch? This new version of the card was only printed once, and has still not been found. The friends will try their luck in finding it, with different opinions on what they would do if they managed to pull it.",
+            "link": "https://njaramillo.itch.io/blade-of-the-overlord"
         },
         {
             "title": "Opening Night",
