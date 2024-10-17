@@ -496,6 +496,13 @@ a:after {
 	padding: 100px 0;
 }
 
+#portfolio a.portfolioLinks img {
+	background-color: var(--main-color);
+	border-radius: 4px;
+	padding: 4px;
+	max-height: 26px;
+}
+
 #portfolio H2,
 #portfolio p {
 	color: var(--accent-color);
@@ -630,7 +637,7 @@ ul.social-buttons {
 	margin: 0;
 }
 
-ul.social-buttons li a {
+ul.social-buttons li a{
 	font-size: 22px;
 	outline: 0;
 	color: #FFFFFF;
