@@ -154,6 +154,10 @@ body {
 	color: var(--dark-color) !important;
 }
 
+.modal-body p img {
+	max-width: 80%;
+}
+
 .modal-footer {
 	background: #2b2b2b;
 }

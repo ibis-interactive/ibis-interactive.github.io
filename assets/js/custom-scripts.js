@@ -53,7 +53,7 @@ $.getJSON('./assets/games.json', function (data) {
               <div class="modal-body centered">
                 <p><img class="img-responsive portfolio-card" src="${game.imgSrc}" alt="${game.altText}"></p>
                 <p class="modal-text">${game.description}</p>
-                <a href="${game.link}" class="btn btn-itchio">Jugar en itch.io</a>
+                <a href="${game.link}" class="btn btn-itchio">${game.playOn}</a>
               </div>
             </div>
           </div>

@@ -1,12 +1,22 @@
 {
     "games": [
         {
+            "title": "Picoteo",
+            "imgSrc": "assets/img/portfolio/picoteo.png",
+            "altText": "portfolio picoteo",
+            "modalId": "picoteo",
+            "description": "Juego promocionado durante la conferencia 9.5 realizada el 7, 8 y 9 de noviembre de 2024 en Valdivia, Chile",
+            "link": "https://picoteo.9punto5.cl",
+            "playOn": "Jugar"
+        },
+        {
             "title": "Vinca's Magic Garden (DEMO)",
             "imgSrc": "assets/img/portfolio/vinca.png",
             "altText": "portfolio vincas magic garden",
             "modalId": "vincasmagicgarden",
             "description": "Vinca is a little witch that helps her grandma with herbs, potions and magic. She's been studying her grandma's books about flowers with great attention, and now Grandma thinks she's capable enough to treat patients on her own by collecting the required flowers and mixing potions. Help her to do so!<br>In Vinca's Magic Garden, you have to explore the nearby forest in search of flowers to make healing potions. Grandma's book on flowers contains useful information to guide Vinca in her quest. Once you've collected enough flowers, Vinca must brew and stir them in the cauldron to finish the potion.",
-            "link": "https://ibis-interactive.itch.io/vincas-magic-garden"
+            "link": "https://ibis-interactive.itch.io/vincas-magic-garden",
+            "playOn": "Jugar en itch.io"
         },
         {
             "title": "You're Next (DEMO)",
@@ -14,7 +24,8 @@
             "altText": "portfolio you're next",
             "modalId": "yourenext",
             "description": "Six friends meet up to party in a creepy, old mansion. What could go wrong? A lot - there are rumors and creepypastas gaining traction about a video game killer that's murdering people in the real world, leaving its signature mark. A warning to its next victim: YOU'RE NEXT.",
-            "link": "https://njaramillo.itch.io/youre-next"
+            "link": "https://njaramillo.itch.io/youre-next",
+            "playOn": "Jugar en itch.io"
         },
         {
             "title": "Blade of the Overlord",
@@ -22,7 +33,8 @@
             "altText": "portfolio blade of the overlord",
             "modalId": "bladeoftheoverlord",
             "description": "Robin, Connie and Jake are a group of friends that have played the Void Wars trading card game since they were kids. Now, older and facing more grown-up problems, they are drawn back to the card game after a nostalgic edition gets reprinted, including a very special card that is very dear to Robin: the famed Blade of the Overlord. The catch? This new version of the card was only printed once, and has still not been found. The friends will try their luck in finding it, with different opinions on what they would do if they managed to pull it.",
-            "link": "https://njaramillo.itch.io/blade-of-the-overlord"
+            "link": "https://njaramillo.itch.io/blade-of-the-overlord",
+            "playOn": "Jugar en itch.io"
         },
         {
             "title": "Opening Night",
@@ -30,7 +42,8 @@
             "altText": "portfolio opening night",
             "modalId": "openingnight",
             "description": "Tonight's performer, one 'Sleazy Harry', has dropped dead. Or well, not dead dead... But as good as dead, as he's been rendered unconscious. Someone spiked his drink and left him out cold, and it's young detective Sofia's job to find out who, and more importantly, why. <br> Armed with only her wit and her trusty notepad, Sofia must find out as much information as she can within the time limit, and choose carefully from her clues in order to expose the culprit.",
-            "link": "https://ibis-interactive.itch.io/opening-night"
+            "link": "https://ibis-interactive.itch.io/opening-night",
+            "playOn": "Jugar en itch.io"
         },
         {
             "title": "Don Pepe y sus globos",
@@ -38,7 +51,8 @@
             "altText": "portfolio don pepe y sus globos",
             "modalId": "donpepe",
             "description": "Luego de recordar su trágico y violento pasado, a Don Pepe se le ocurrió una idea millonaria: canalizar esa violencia en globos... ¡de agua! <br> El gran torneo de globos de agua de Don Pepe ha reunido a los más hábiles combatientes del barrio, quienes llenarán y lanzarán sus globos de agua hasta que solo uno quede seco. ¿Quién ganará?",
-            "link": "https://ibis-interactive.itch.io/don-pepe-y-sus-globos"
+            "link": "https://ibis-interactive.itch.io/don-pepe-y-sus-globos",
+            "playOn": "Jugar en itch.io"
         }
     ]
 }
