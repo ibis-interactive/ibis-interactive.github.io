@@ -5,7 +5,7 @@
             "imgSrc": "assets/img/portfolio/picoteo.png",
             "altText": "portfolio picoteo",
             "modalId": "picoteo",
-            "description": "Juego promocionado durante la conferencia 9.5 realizada el 7, 8 y 9 de noviembre de 2024 en Valdivia, Chile",
+            "description": "Picoteo es un juego casual donde debes ayudar a una bandurria a alimentarse en el humedal que habita, mientras evita la basura y a sus depredadores.<br/>¡Come, suma puntos y trepa en la tabla de posiciones!<br/>Picoteo fue desarrollado para y estrenado en la edición 2024 de la conferencia <a class='description-link' href='https://9punto5.cl'>9.5</a>.",
             "link": "https://ibis-interactive.itch.io/picoteo",
             "playOn": "Jugar"
         },
