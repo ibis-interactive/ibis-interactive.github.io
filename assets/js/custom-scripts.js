@@ -6,15 +6,6 @@ $(document).ready(function () {
     }, 1500, 'easeInOutExpo');
     event.preventDefault();
   });
-
-  // if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-  //   // true for mobile device
-  //   console.log("mobile device");
-  //   $('.portfolio-card').on('click touchstart', (element) => {
-  //     // element.stopPropagation(); // Evita que el evento se propague a otros elementos
-  //     $(this).find('figcaption').toggleClass('active');
-  //   });
-  // }
 });
 
 var scrollSpy = new bootstrap.ScrollSpy(document.body, {
@@ -37,36 +28,6 @@ $(window).on('activate.bs.scrollspy', function (event) {
 $.getJSON('./assets/games.json', function (data) {
   const games = data.games;
   games.forEach(function (game) {
-
-    // const portfolioHtml = `
-    //     <div class="col-12 col-md-6 col-xl-4 mb-4">
-    //       <div class="grid overlay">
-    //         <figure class="portfolio-card" data-target="#${game.modalId}"> <img class="img-responsive" src="${game.imgSrc}" alt="${game.altText}">
-    //           <figcaption>
-    //             <h5>${game.title}</h5>
-    //             <span data-bs-toggle="modal" data-bs-target="#${game.modalId}" class="btn btn-default">Detalles</span>
-    //           </figcaption>
-    //         </figure>
-    //       </div>
-    //     </div>
-
-    //     <div class="modal fade" id="${game.modalId}" tabindex="-1" aria-hidden="true" aria-labelledby="${game.modalId}">
-    //       <div class="modal-dialog">
-    //         <div class="modal-content">
-    //           <div class="modal-header">
-    //             <h4 class="modal-title">${game.title}</h4>
-    //             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    //           </div>
-    //           <div class="modal-body centered">
-    //             <p><img class="img-responsive portfolio-card" src="${game.imgSrc}" alt="${game.altText}"></p>
-    //             <p class="modal-text">${game.description}</p>
-    //             <a href="${game.link}" class="btn btn-itchio">${game.playOn}</a>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   `;
-
     const portfolioHtml = `
         <div class="col-12 col-md-6 col-xl-4 mb-4">
           <div class="grid">
