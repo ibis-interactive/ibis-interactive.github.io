@@ -86,3 +86,17 @@ $.getJSON('./assets/team.json', function (data) {
     $('#teamMembers').append(memberHTML);
   });
 });
+
+$.getJSON('./assets/socials.json', function (data) {
+  let socials = data.socials;
+  socials.forEach(social => {
+    let socialHTML = `
+      <li class="list-inline-item" id="social_${social.name}">
+        <a href="${social.url}" aria-label="${social.aria}">
+        <i class="${social.icon}"></i>
+        </a>
+      </li>
+    `;
+    $('#socials').append(socialHTML);
+  });
+});

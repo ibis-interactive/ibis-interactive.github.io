@@ -10,6 +10,15 @@
             "playOn": "Jugar"
         },
         {
+            "title": "Don Pepe y sus globos (Alpha)",
+            "imgSrc": "assets/img/portfolio/don-pepe.png",
+            "altText": "portfolio don pepe y sus globos",
+            "modalId": "donpepe",
+            "description": "Luego de recordar su trágico y violento pasado, a Don Pepe se le ocurrió una idea millonaria: canalizar esa violencia en globos... ¡de agua! <br> El gran torneo de globos de agua de Don Pepe ha reunido a los más hábiles combatientes del barrio, quienes llenarán y lanzarán sus globos de agua hasta que solo uno quede seco. ¿Quién ganará?",
+            "link": "https://ibis-interactive.itch.io/don-pepe-y-sus-globos",
+            "playOn": "Jugar en itch.io"
+        },
+        {
             "title": "Vinca's Magic Garden (DEMO)",
             "imgSrc": "assets/img/portfolio/vinca.png",
             "altText": "portfolio vincas magic garden",
@@ -43,15 +52,6 @@
             "modalId": "openingnight",
             "description": "Tonight's performer, one 'Sleazy Harry', has dropped dead. Or well, not dead dead... But as good as dead, as he's been rendered unconscious. Someone spiked his drink and left him out cold, and it's young detective Sofia's job to find out who, and more importantly, why. <br> Armed with only her wit and her trusty notepad, Sofia must find out as much information as she can within the time limit, and choose carefully from her clues in order to expose the culprit.",
             "link": "https://ibis-interactive.itch.io/opening-night",
-            "playOn": "Jugar en itch.io"
-        },
-        {
-            "title": "Don Pepe y sus globos",
-            "imgSrc": "assets/img/portfolio/don-pepe.png",
-            "altText": "portfolio don pepe y sus globos",
-            "modalId": "donpepe",
-            "description": "Luego de recordar su trágico y violento pasado, a Don Pepe se le ocurrió una idea millonaria: canalizar esa violencia en globos... ¡de agua! <br> El gran torneo de globos de agua de Don Pepe ha reunido a los más hábiles combatientes del barrio, quienes llenarán y lanzarán sus globos de agua hasta que solo uno quede seco. ¿Quién ganará?",
-            "link": "https://ibis-interactive.itch.io/don-pepe-y-sus-globos",
             "playOn": "Jugar en itch.io"
         }
     ]
