@@ -1,0 +1,45 @@
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#twitch {
+    border-radius: 12px;
+}
+
+#ggj25-logo {
+    max-height: 156px;
+}
+#headerwrap {
+	background: url(../img/headwrap/bg/ggj-bg-banner2.png) no-repeat top;
+}
+
+#headerwrap p {
+    color: #fff;
+    margin-top: 24px;
+}
+
+#headerwrap p span {
+    background-color: #52325b;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 12px;
+}
+
+#headerwrap p span a {
+    font-weight: bold;
+    text-decoration: none;
+    /* color : #9146ff; */
+    color : #f0f0ff;
+}
+
+.youtube {
+    border-radius: 16px;
+}

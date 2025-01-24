@@ -1,0 +1,10 @@
+{
+    "vods": [
+        {
+            "title": "Charla Pre-GGJ #1",
+            "speaker": "Vicente",
+            "description": "lorem ipsum dolor sum",
+            "iframe": {"url": "https://www.youtube.com/embed/aYWqpqKQbjc?si=mVPMTgzXUpSqzJ28", "title": "Ibis Reel"}
+        }
+    ]
+}

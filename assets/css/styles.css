@@ -499,7 +499,7 @@ a:after {
 }
 
 #portfolio {
-	background: var(--dark-color);
+	background: #fff;
 	padding: 100px 0;
 }
 
@@ -510,10 +510,10 @@ a:after {
 	max-height: 26px;
 }
 
-#portfolio H2,
+/* #portfolio H2,
 #portfolio p {
 	color: var(--accent-color);
-}
+} */
 
 #portfolio .btn-default {
 	background-color: var(--main-color);
@@ -615,30 +615,30 @@ a:after {
 	margin-right: 4px;
 }
 
-#footerwrap {
+#footer {
 	background: var(--dark-color);
 	padding: 25px 0 15px 0;
 	/* border-bottom: 1px solid #ddd; */
 	text-align: center;
 }
 
-#footerwrap span.copyright {
+#footer span.copyright {
 	line-height: 40px;
 	color: #888;
 	font-weight: 400;
 }
 
-#footerwrap span.copyright a {
+#footer span.copyright a {
 	color: #888;
 	border-bottom: 1px dotted;
 }
 
-#footerwrap span.copyright a:hover {
+#footer span.copyright a:hover {
 	color: var(-);
 	text-decoration: none;
 }
 
-#footerwrap h4 {
+#footer h4 {
 	color: white;
 }
 
