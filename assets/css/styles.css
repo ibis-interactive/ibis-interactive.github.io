@@ -333,6 +333,10 @@ a:after {
    Wrap Sections
    ========================================================================== */
 
+#home-section {
+	padding-top: 70px
+}
+
 #headerwrap {
 	background: url(../img/headwrap/bg/puente-min.png) no-repeat top;
 	/* margin-top: -50px; */
