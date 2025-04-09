@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600);
 @import url(https://fonts.googleapis.com/css?family=Raleway:600,700,800);
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 :root {
 	--main-color: #ff4646;
@@ -41,6 +44,21 @@ hr {
 	width: 25%;
 	position: relative;
 	border: none;
+}
+
+h1, h2 {
+	font-family: 'Cairo Play', 'Open Sans', sans-serif !important;
+	font-weight: bold !important;
+}
+
+h3, h4 {
+	font-family: Cairo, 'Open Sans', sans-serif !important;
+	font-weight: bold !important;
+}
+
+a.nav-link {
+	font-family: 'Cairo Play', 'Open Sans', sans-serif !important;
+	font-weight: 600 !important;
 }
 
 img {
@@ -338,24 +356,29 @@ a:after {
 }
 
 #headerwrap {
-	background: url(../img/headwrap/bg/puente-min.png) no-repeat top;
-	/* margin-top: -50px; */
+	position: relative;
 	padding-top: 120px;
 	text-align: center;
-	background-attachment: relative;
 	min-height: 850px;
 	width: 100%;
-	-webkit-background-size: 100%;
-	-moz-background-size: 100%;
-	-o-background-size: 100%;
-	background-size: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	padding-bottom: 100px;
-}
-
+	overflow: hidden; /* Importante para contener la imagen */
+	z-index: 0;
+  }
+  
+  #headerwrap::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: url(../img/headwrap/bg/puente-min.png) no-repeat top center;
+	background-size: cover;
+	filter: grayscale(80%);
+	z-index: -1; /* Detrás del contenido */
+  }
+	
 #headerwrap h1 {
 	color: #FFFFFF;
 	font-size: 50px;
@@ -363,6 +386,7 @@ a:after {
 	font-weight: 400;
 	text-align: center;
 	letter-spacing: 3px;
+	font-family: 'Cairo Play', Arial, Helvetica, sans-serif;
 }
 
 #headerwrap p {
@@ -790,13 +814,16 @@ ul.social-buttons li a:active {
 }
 
 #iframe-youtube {
-	max-width: 560px;
-	max-height: 315px;
-	border-radius: 14px;
-	
-	width: 100vh;
-	height: 56.25vh;
+	width: 100%;
+	aspect-ratio: 16 / 9;
 }
+
+#iframe-youtube iframe {
+	width: 100%;
+	height: 100%;
+	border-radius: 14px;
+
+  }
 
 /* ==========================================
    MEDIA QUERIES
@@ -843,10 +870,7 @@ screen and (max-device-width:1050px) {
 		margin-top: 30px;
 	}
 
-	#iframe-youtube {
-		width: 100%;
-		height: 56.25%;
-	}
+	
 }
 
 #logo {
