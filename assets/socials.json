@@ -1,6 +1,12 @@
 {
     "socials": [
         {
+            "name": "e-mail",
+            "url": "mailto:contacto@ibisinteractive.cl",
+            "aria": "Ibis Interactive e-mail address",
+            "icon": "fa fa-regular fa-envelope"
+        },
+        {
             "name": "itch.io",
             "url": "https://ibis-interactive.itch.io",
             "aria": "Ibis Interactive Itch.io Page",
@@ -17,12 +23,7 @@
             "url": "https://facebook.com/ibisinteractive.cl",
             "aria": "Ibis Interactive Facebook Page",
             "icon": "fa fa-brands fa-facebook"
-        },
-        {
-            "name": "e-mail",
-            "url": "mailto:ibisinteractive@gmail.com",
-            "aria": "Ibis Interactive e-mail address",
-            "icon": "fa fa-regular fa-envelope"
         }
+        
     ]
 }

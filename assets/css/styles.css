@@ -107,7 +107,7 @@ body {
 	background-color: #FFFFFF;
 	border-color: rgba(127, 90, 5, 1);
 	padding: 20px 0;
-	border-bottom: solid var(--main-color)
+	border-bottom: solid var(--main-color);
 }
 
 .navbar-inverse .navbar-collapse>.navbar-nav>li>a {
@@ -207,6 +207,7 @@ body {
 .navbar-inverse .navbar-brand {
 	font-weight: 500;
 	font-size: 20px;
+	font-family: "Cairo Play", Cairo, "Open Sans", Arial;
 }
 
 .navbar-toggler {
@@ -648,22 +649,13 @@ a:after {
 	padding: 25px 0 15px 0;
 	/* border-bottom: 1px solid #ddd; */
 	text-align: center;
+	color: white;
 }
 
-#footer span.copyright {
-	line-height: 40px;
-	color: #888;
-	font-weight: 400;
-}
-
-#footer span.copyright a {
-	color: #888;
-	border-bottom: 1px dotted;
-}
-
-#footer span.copyright a:hover {
-	color: var(-);
+#footer .footer-links a{
+	color: white;
 	text-decoration: none;
+	font-weight: 500;
 }
 
 #footer h4 {
