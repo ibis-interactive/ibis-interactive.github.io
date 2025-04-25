@@ -1,13 +1,13 @@
 // Función para cargar un componente en un contenedor
 
 // Cargar los componentes
-loadComponent('views/components/index/about.html', 'about');
-loadComponent('views/components/index/home.html', 'headerwrap');
-loadComponent('views/components/index/portfolio.html', 'portfolio');
-loadComponent('views/components/index/team.html', 'team');
+loadComponent('/views/components/index/about.html', 'about');
+loadComponent('/views/components/index/home.html', 'headerwrap');
+loadComponent('/views/components/index/portfolio.html', 'portfolio');
+loadComponent('/views/components/index/team.html', 'team');
 
 
-$.getJSON('./assets/games.json', function (data) {
+$.getJSON('/assets/games.json', function (data) {
     const games = data.games;
     games.forEach(function (game) {
         const portfolioHtml = `
@@ -41,7 +41,7 @@ $.getJSON('./assets/games.json', function (data) {
     });
 });
 
-$.getJSON('./assets/team.json', function (data) {
+$.getJSON('/assets/team.json', function (data) {
     let teamMembers = data.teamMembers;
     teamMembers.forEach(member => {
         let links = '';

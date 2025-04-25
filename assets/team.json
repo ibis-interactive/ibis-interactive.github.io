@@ -6,7 +6,7 @@
                 {"name":"Director Narrativo","icon":"fa-solid fa-book"},
                 {"name":"Programador Líder","icon":"fa-solid fa-code"}
             ],
-            "img": "assets/img/team/nico.webp",
+            "img": "/assets/img/team/nico.webp",
             "description": "Desarrollador Unity desde 2016. Fanático de las historias en todas sus formas. Dicen que no duerme...",
             "favorites": "Xenoblade Chonicles, Metroid Prime, Cave Story, Eternal Darkness, Clone Hero, Blade Runner",
             "links": [
@@ -20,7 +20,7 @@
         {
             "name": "Cris",
             "roles":[{"name": "Director de Audio", "icon": "fa-solid fa-music"}],
-            "img": "assets/img/team/cris.webp",
+            "img": "/assets/img/team/cris.webp",
             "description": "Un profe de música aburrido en busca de la melodía secreta para abrir un portal y escapar a otra dimensión.",
             "favorites": "Age of Empires II, The Settlers, Donkey Kong saga",
             "links": [
@@ -39,7 +39,7 @@
         {
             "name": "Jaji",
             "roles": [{"name": "Directora de Arte", "icon": "fa-solid fa-palette"}],
-            "img": "assets/img/team/jaji.webp",
+            "img": "/assets/img/team/jaji.webp",
             "description": "Artista invocando ideas con colores y formas desde tiempos inmemoriales.",
             "favorites": "The Legend of Zelda saga, Omori, Project Sekai",
             "links": [
@@ -61,7 +61,7 @@
                 {"name":"Game Designer","icon":"fa-solid fa-compass-drafting"},
                 {"name":"Programador","icon":"fa-solid fa-code"}
             ],
-            "img": "assets/img/team/seba.webp",
+            "img": "/assets/img/team/seba.webp",
             "description": "Un desarrollador que domina el arte antiguo de conjurar mecánicas de juego que dan vida a lo inerte.",
             "favorites": "Hollow Knight, Terranigma, The Binding of Isaac: Rebirth",
             "links": [
@@ -78,7 +78,7 @@
                 {"name":"Animador 3D/2D","icon":"fa-solid fa-cubes"},
                 {"name":"Programador","icon":"fa-solid fa-code"}
             ],
-            "img": "assets/img/team/marco.webp",
+            "img": "/assets/img/team/marco.webp",
             "description": "Aprendiz del mundo 2d/3d que transforma ideas en movimiento dando vida a personajes y sus historias.",
             "favorites": "Dark Souls, Castlevania, Warhammer 40K, Metroid",
             "links": [
@@ -95,7 +95,7 @@
                 {"name":"Level Designer","icon":"fa-solid fa-panorama"},
                 {"name":"Programador","icon":"fa-solid fa-code"}
             ],
-            "img": "assets/img/team/israel.webp",
+            "img": "/assets/img/team/israel.webp",
             "description": "Un desarrollador tradicional creando y destruyendo mundos para cambiar de ritmo.",
             "favorites": "The Legend of Zelda saga, Assassin's Creed saga, NFS & Burnout Series, Jak and Daxter saga, Ratchet & Clank saga",
             "links": [

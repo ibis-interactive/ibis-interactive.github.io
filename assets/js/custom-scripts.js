@@ -38,10 +38,10 @@ function loadComponent(url, elementId) {
 }
 
 
-loadComponent('views/partials/header.html', 'header');
-loadComponent('views/partials/footer.html', 'footer');
+loadComponent('/views/partials/header.html', 'header');
+loadComponent('/views/partials/footer.html', 'footer');
 
-$.getJSON('./assets/socials.json', function (data) {
+$.getJSON('/assets/socials.json', function (data) {
   let socials = data.socials;
   socials.forEach(social => {
     let socialHTML = `

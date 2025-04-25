@@ -2,10 +2,10 @@ $().ready(function() {
 
 });
 
-loadComponent('views/components/ggj25/twitch.html', 'headerwrap');
-loadComponent('views/components/ggj25/youtube.html', 'youtube');
+loadComponent('/views/components/ggj25/twitch.html', 'headerwrap');
+loadComponent('/views/components/ggj25/youtube.html', 'youtube');
 
-$.getJSON('./assets/ggj25-vods.json', function(data) {
+$.getJSON('/assets/ggj25-vods.json', function(data) {
     let vods = data.vods;
 
     vods.forEach(vod => {

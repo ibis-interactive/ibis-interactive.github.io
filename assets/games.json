@@ -2,7 +2,7 @@
     "games": [
         {
             "title": "Picoteo",
-            "imgSrc": "assets/img/portfolio/picoteo.png",
+            "imgSrc": "/assets/img/portfolio/picoteo.png",
             "altText": "portfolio picoteo",
             "modalId": "picoteo",
             "description": "Picoteo es un juego casual donde debes ayudar a una bandurria a alimentarse en el humedal que habita, mientras evita la basura y a sus depredadores.<br/>¡Come, suma puntos y trepa en la tabla de posiciones!<br/>Picoteo fue desarrollado para y estrenado en la edición 2024 de la conferencia <a class='description-link' href='https://9punto5.cl'>9.5</a>.",
@@ -11,7 +11,7 @@
         },
         {
             "title": "Don Pepe y sus globos (Alpha)",
-            "imgSrc": "assets/img/portfolio/don-pepe.png",
+            "imgSrc": "/assets/img/portfolio/don-pepe.png",
             "altText": "portfolio don pepe y sus globos",
             "modalId": "donpepe",
             "description": "Luego de recordar su trágico y violento pasado, a Don Pepe se le ocurrió una idea millonaria: canalizar esa violencia en globos... ¡de agua! <br> El gran torneo de globos de agua de Don Pepe ha reunido a los más hábiles combatientes del barrio, quienes llenarán y lanzarán sus globos de agua hasta que solo uno quede seco. ¿Quién ganará?",
@@ -20,7 +20,7 @@
         },
         {
             "title": "You're Next (DEMO)",
-            "imgSrc": "assets/img/portfolio/youre-next.png",
+            "imgSrc": "/assets/img/portfolio/youre-next.png",
             "altText": "portfolio you're next",
             "modalId": "yourenext",
             "description": "Six friends meet up to party in a creepy, old mansion. What could go wrong? A lot - there are rumors and creepypastas gaining traction about a video game killer that's murdering people in the real world, leaving its signature mark. A warning to its next victim: YOU'RE NEXT.",
@@ -29,7 +29,7 @@
         },
         {
             "title": "Blade of the Overlord",
-            "imgSrc": "assets/img/portfolio/blade.png",
+            "imgSrc": "/assets/img/portfolio/blade.png",
             "altText": "portfolio blade of the overlord",
             "modalId": "bladeoftheoverlord",
             "description": "Robin, Connie and Jake are a group of friends that have played the Void Wars trading card game since they were kids. Now, older and facing more grown-up problems, they are drawn back to the card game after a nostalgic edition gets reprinted, including a very special card that is very dear to Robin: the famed Blade of the Overlord. The catch? This new version of the card was only printed once, and has still not been found. The friends will try their luck in finding it, with different opinions on what they would do if they managed to pull it.",
