@@ -1,6 +1,15 @@
 {
     "games": [
         {
+            "title": "LongaMóvil",
+            "imgSrc": "/assets/img/portfolio/longamovil.png",
+            "altText": "portfolio longamovil",
+            "modalId": "lonvamovil",
+            "description": "¡Bienvenidx al LongaMóvil! <br/>Tu misión es servir los mejores choripanes, con la cocción perfecta y los condimentos precisos, para apoyar al MSPLSC y demostrar de una vez por todas que la verdadera longaniza es Sancarlina.<br/>Videojuego oficial de la película chilena <a href='https://www.instagram.com/denominaciondeorigenfilm/'>Denominación de Origen </a>, en cines desde el 24 de Abril.",
+            "link": "https://ibis-interactive.itch.io/longamovil",
+            "playOn": "Jugar"
+        },
+        {
             "title": "Picoteo",
             "imgSrc": "/assets/img/portfolio/picoteo.png",
             "altText": "portfolio picoteo",

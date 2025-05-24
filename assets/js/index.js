@@ -9,9 +9,10 @@ loadComponent('/views/components/index/team.html', 'team');
 
 $.getJSON('/assets/games.json', function (data) {
     const games = data.games;
+    const gridSize = games.length <= 4 ? 'col-md-6' : 'col-md-4'; 
     games.forEach(function (game) {
         const portfolioHtml = `
-          <div class="col-12 col-md-6 mb-4">
+          <div class="col-12 ${gridSize} mb-4">
             <div class="grid">
               <div class="portfolio-card">
                 <img class="img-responsive" src="${game.imgSrc}" alt="${game.altText}">
