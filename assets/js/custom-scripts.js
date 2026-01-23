@@ -24,22 +24,26 @@ $(".nav-item .nav-link").on("click", function () {
 $(window).on('activate.bs.scrollspy', function (event) {
   $(event.relatedTarget).parent().addClass('active').siblings().removeClass('active');
 });
-
 function loadComponent(url, elementId) {
   var xhr = new XMLHttpRequest();  // Crear una nueva solicitud HTTP
   xhr.open('GET', url, false);     // 'false' hace que la solicitud sea sincrónica
   xhr.send();                      // Enviar la solicitud
 
   if (xhr.status === 200) {        // Si la solicitud fue exitosa
-    document.getElementById(elementId).innerHTML = xhr.responseText;
+    var container = document.getElementById(elementId);
+    if (container) {
+      container.innerHTML = xhr.responseText;
+    } else {
+      console.warn(`No se encontró el elemento con id "${elementId}".`);
+    }
   } else {
     console.error("Error al cargar el componente:", xhr.status, xhr.statusText);
   }
 }
 
 
-loadComponent('/views/partials/header.html', 'header');
-loadComponent('/views/partials/footer.html', 'footer');
+loadComponent('views/partials/header.html', 'header');
+loadComponent('views/partials/footer.html', 'footer');
 
 $.getJSON('/assets/socials.json', function (data) {
   let socials = data.socials;

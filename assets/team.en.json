@@ -1,0 +1,110 @@
+{
+    "teamMembers": [
+        {
+            "name": "Nico",
+            "roles": [
+                {"name":"Narrative Director","icon":"fa-solid fa-book"},
+                {"name":"Lead Programmer","icon":"fa-solid fa-code"}
+            ],
+            "img": "/assets/img/team/nico.webp",
+            "description": "Unity developer since 2016. A fan of stories in all their forms. Rumor says he doesn't sleep...",
+            "favorites": "Xenoblade Chronicles, Metroid Prime, Cave Story, Eternal Darkness, Clone Hero, Blade Runner",
+            "links": [
+                {
+                    "href": "https://njaramillo.itch.io",
+                    "icon": "fa-brands fa-itch-io",
+                    "label": "Nico personal itch.io page"
+                }
+            ]
+        },
+        {
+            "name": "Cris",
+            "roles":[{"name": "Audio Director", "icon": "fa-solid fa-music"}],
+            "img": "/assets/img/team/cris.webp",
+            "description": "A bored music teacher looking for the secret melody to open a portal and escape to another dimension.",
+            "favorites": "Age of Empires II, The Settlers, Donkey Kong series",
+            "links": [
+                {
+                    "href": "https://on.soundcloud.com/iBMX5uMXVjp1M4da8",
+                    "icon": "fa-brands fa-soundcloud",
+                    "label": "Cris soundcloud page"
+                },
+                {
+                    "href": "https://crist-corvus.itch.io",
+                    "icon": "fa-brands fa-itch-io",
+                    "label": "Cris personal itch.io page"
+                }
+            ]
+        },
+        {
+            "name": "Jaji",
+            "roles": [{"name": "Art Director", "icon": "fa-solid fa-palette"}],
+            "img": "/assets/img/team/jaji.webp",
+            "description": "Artist conjuring ideas with colors and shapes since time immemorial.",
+            "favorites": "The Legend of Zelda series, Omori, Project Sekai",
+            "links": [
+                {
+                    "href": "https://www.instagram.com/jajiwis",
+                    "icon": "fa-brands fa-instagram",
+                    "label": "Jaji's Instagram profile"
+                },
+                {
+                    "href": "https://jajiwis.itch.io",
+                    "icon": "fa-brands fa-itch-io",
+                    "label": "Jaji personal itch.io page"
+                }
+            ]
+        },
+        {
+            "name": "Seba",
+            "roles": [
+                {"name":"Game Designer","icon":"fa-solid fa-compass-drafting"},
+                {"name":"Programmer","icon":"fa-solid fa-code"}
+            ],
+            "img": "/assets/img/team/seba.webp",
+            "description": "A developer who masters the ancient art of conjuring game mechanics that give life to the inanimate.",
+            "favorites": "Hollow Knight, Terranigma, The Binding of Isaac: Rebirth",
+            "links": [
+                {
+                    "href": "https://zebax2010.itch.io",
+                    "icon": "fa-brands fa-itch-io",
+                    "label": "Seba personal itch.io page"
+                }
+            ]
+        },
+        {
+            "name": "Marco",
+            "roles": [
+                {"name":"3D/2D Animator","icon":"fa-solid fa-cubes"},
+                {"name":"Programmer","icon":"fa-solid fa-code"}
+            ],
+            "img": "/assets/img/team/marco.webp",
+            "description": "A 2D/3D apprentice who transforms ideas into motion, bringing characters and their stories to life.",
+            "favorites": "Dark Souls, Castlevania, Warhammer 40K, Metroid",
+            "links": [
+                {
+                    "href": "https://ravield.itch.io",
+                    "icon": "fa-brands fa-itch-io",
+                    "label": "Marco personal itch.io page"
+                }
+            ]
+        },
+        {
+            "name": "Israel",
+            "roles": [
+                {"name":"Level Designer","icon":"fa-solid fa-panorama"},
+                {"name":"Programmer","icon":"fa-solid fa-code"}
+            ],
+            "img": "/assets/img/team/israel.webp",
+            "description": "A traditional developer creating and destroying worlds to change the pace.",
+            "favorites": "The Legend of Zelda series, Assassin's Creed series, NFS & Burnout series, Jak and Daxter, Ratchet & Clank",
+            "links": [
+                {
+                    "href": "https://iadr.itch.io",
+                    "icon": "fa-brands fa-itch-io",
+                    "label": "Israel personal itch.io page"
+                }
+            ]
+        }
+    ]
+}

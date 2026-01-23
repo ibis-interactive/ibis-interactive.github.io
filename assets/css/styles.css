@@ -869,3 +869,10 @@ screen and (max-device-width:1050px) {
 	width: 150px;
 	margin-top: 200px;
 }
+
+#services img {
+	max-width: 100%;
+	object-fit: contain;
+	border-radius: 4px;
+	filter: grayscale(30%);
+}

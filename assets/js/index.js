@@ -4,14 +4,28 @@
 loadComponent('/views/components/index/about.html', 'about');
 loadComponent('/views/components/index/home.html', 'headerwrap');
 loadComponent('/views/components/index/portfolio.html', 'portfolio');
+loadComponent('/views/components/index/services.html', 'services');
 loadComponent('/views/components/index/team.html', 'team');
 
+function getLang() {
+    return document.documentElement.lang || 'es';
+}
 
-$.getJSON('/assets/games.json', function (data) {
-    const games = data.games;
-    const gridSize = games.length <= 4 ? 'col-md-6' : 'col-md-4'; 
-    games.forEach(function (game) {
-        const portfolioHtml = `
+let reloadTimer = null;
+
+function loadGamesAndTeam(lang) {
+    const gamesFile = `/assets/games.${lang}.json`;
+    const teamFile = `/assets/team.${lang}.json`;
+
+    // Clear existing content to avoid duplicates
+    $('#gamesList').empty();
+    $('#teamMembers').empty();
+
+    $.getJSON(gamesFile, function (data) {
+        const games = data.games || [];
+        const gridSize = games.length <= 4 ? 'col-md-6' : 'col-md-4';
+        games.forEach(function (game) {
+            const portfolioHtml = `
           <div class="col-12 ${gridSize} mb-4">
             <div class="grid">
               <div class="portfolio-card">
@@ -20,7 +34,7 @@ $.getJSON('/assets/games.json', function (data) {
               </div>
             </div>
           </div>
-    
+
           <div class="modal fade" id="${game.modalId}" tabindex="-1" aria-hidden="true" aria-labelledby="${game.modalId}">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -38,34 +52,62 @@ $.getJSON('/assets/games.json', function (data) {
           </div>
         `;
 
-        $("#gamesList").append(portfolioHtml);
+            $("#gamesList").append(portfolioHtml);
+        });
+    }).fail(function () {
+        console.warn('Could not load', gamesFile);
     });
-});
 
-$.getJSON('/assets/team.json', function (data) {
-    let teamMembers = data.teamMembers;
-    teamMembers.forEach(member => {
-        let links = '';
-        member.links.forEach(link => {
-            links += `<a href="${link.href}" aria-label="${link.label}"><i class="fa ${link.icon}"></i></a>`;
-        });
+    $.getJSON(teamFile, function (data) {
+        let teamMembers = data.teamMembers || [];
+        teamMembers.forEach(member => {
+            let links = '';
+            (member.links || []).forEach(link => {
+                links += `<a href="${link.href}" aria-label="${link.label}"><i class="fa ${link.icon}"></i></a>`;
+            });
 
-        let roles = '';
-        member.roles.forEach((role, idx) => {
-            if (idx != 0) roles += " - "
-            roles += `${role.name} <span class="${role.icon}"/>`;
-        });
+            let roles = '';
+            (member.roles || []).forEach((role, idx) => {
+                if (idx != 0) roles += " - "
+                roles += `${role.name} <span class="${role.icon}"/>`;
+            });
 
 
-        let memberHTML = `
+            let memberHTML = `
           <div class="col-lg-4 centered pad">
             <img class="img img-circle" src="${member.img}" height="120px" width="120px" alt="team member ${member.name}">
             <h4><strong>${member.name}</strong></h4>
             <h6>${roles}</h6>
-            <p>${member.description}<br><strong>Juegos favoritos:</strong> ${member.favorites}</p>
+            <p>${member.description}<br><strong>Favorite games:</strong> ${member.favorites}</p>
             ${links}
           </div>
         `;
-        $('#teamMembers').append(memberHTML);
+            $('#teamMembers').append(memberHTML);
+        });
+    }).fail(function () {
+        console.warn('Could not load', teamFile);
+    });
+}
+
+// Initial load
+loadGamesAndTeam(getLang());
+
+// Watch for changes to <html lang="..."> and reload data when it changes
+const observer = new MutationObserver(function (mutationsList) {
+    for (const mutation of mutationsList) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'lang') {
+            const newLang = getLang();
+            clearTimeout(reloadTimer);
+            reloadTimer = setTimeout(() => loadGamesAndTeam(newLang), 100);
+        }
+    }
+});
+observer.observe(document.documentElement, { attributes: true });
+
+// Also listen for common custom events used by i18n libraries
+['languageChanged', 'i18nChanged', 'i18n:languageChanged'].forEach(evt => {
+    window.addEventListener(evt, function () {
+        clearTimeout(reloadTimer);
+        reloadTimer = setTimeout(() => loadGamesAndTeam(getLang()), 100);
     });
 });

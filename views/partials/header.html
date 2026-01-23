@@ -3,7 +3,7 @@
       <div class="navbar-header">
         <div class="pull-left logo"></div>
         <a class="navbar-brand" href="/#home" aria-label="Ibis Interactive Home section">
-          <img id="brandImg" src="/assets/img/about/ibis.png" alt="ibis interactive Brand logo" />Ibis Interactive</a>
+          <img id="brandImg" src="/assets/img/about/ibis.png" alt="ibis interactive Brand logo" /><span data-i18n="brand.name">Ibis Interactive</span></a>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,10 +13,20 @@
 
     <div class="collapse navbar-collapse px-4 justify-content-end" id="navbarToggler">
       <ul class="navbar-nav mb-2 mb-lg-0 pull-right">
-        <li class="nav-item" id="nav-home"><a href="/#home-section" class="nav-link smoothScroll">Inicio</a></li>
-        <li class="nav-item" id="nav-about"> <a href="/#about" class="nav-link smoothScroll">Nosotros</a></li>
-        <li class="nav-item" id="nav-portfolio"> <a href="/#portfolio" class="nav-link smoothScroll">Juegos</a></li>
-        <li class="nav-item" id="nav-team"> <a href="/#team" class="nav-link smoothScroll">Equipo</a></li>
+        <li class="nav-item" id="nav-home"><a href="/#home-section" class="nav-link smoothScroll"><span data-i18n="nav.home">Inicio</span></a></li>
+        <li class="nav-item" id="nav-about"> <a href="/#about" class="nav-link smoothScroll"><span data-i18n="nav.about">Nosotros</span></a></li>
+        <li class="nav-item" id="nav-portfolio"> <a href="/#portfolio" class="nav-link smoothScroll"><span data-i18n="nav.portfolio">Juegos</span></a></li>
+        <!-- <li class="nav-item" id="nav-services"> <a href="/#services" class="nav-link smoothScroll">Servicios</a></li> -->
+        <li class="nav-item" id="nav-team"> <a href="/#team" class="nav-link smoothScroll"><span data-i18n="nav.team">Equipo</span></a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span data-i18n="nav.lang">ES</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+            <li><a class="dropdown-item lang-switch" href="#" data-lang="es">ES - Español</a></li>
+            <li><a class="dropdown-item lang-switch" href="#" data-lang="en">EN - English</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </nav>
