@@ -25,7 +25,11 @@ function loadGamesAndTeam(lang) {
         const games = data.games || [];
         const gridSize = games.length <= 4 ? 'col-md-6' : 'col-md-4';
         games.forEach(function (game) {
-            const portfolioHtml = `
+          const linkButtons = (Array.isArray(game.link) ? game.link : []).map(linkInfo => {
+              return `<a href="${linkInfo.url}" class="btn btn-stores"><i class="${linkInfo.icon}"></i> ${game.playOn} ${linkInfo.store}</a>`;
+          }).join(' ');
+
+          const portfolioHtml = `
           <div class="col-12 ${gridSize} mb-4">
             <div class="grid">
               <div class="portfolio-card">
@@ -45,7 +49,7 @@ function loadGamesAndTeam(lang) {
                 <div class="modal-body centered">
                   <p><img class="img-responsive portfolio-card" src="${game.imgSrc}" alt="${game.altText}"></p>
                   <p class="modal-text">${game.description}</p>
-                  <a href="${game.link}" class="btn btn-itchio">${game.playOn}</a>
+                  ${linkButtons}
                 </div>
               </div>
             </div>

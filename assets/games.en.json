@@ -6,8 +6,8 @@
             "altText": "portfolio longamovil",
             "modalId": "lonvamovil",
             "description": "Welcome to LongaMóvil! <br/>Your mission is to serve the best choripanes, with perfect cooking and precise condiments, to support MSPLSC and prove once and for all that the true longaniza is Sancarlina.<br/>Official video game of the Chilean film <a href='https://www.instagram.com/denominaciondeorigenfilm/'>Denominación de Origen</a>, in cinemas since April 24.",
-            "link": "https://ibis-interactive.itch.io/longamovil",
-            "playOn": "Play"
+            "link": [{"store": "Google Play", "icon":"fa-brands fa-google-play", "url": "https://play.google.com/store/apps/details?id=com.ibisinteractive.longamovil"}, {"store": "App Store",  "icon":"fa-brands fa-app-store-ios", "url": "https://apps.apple.com/cl/app/longamovil/id6744369874"}],
+            "playOn": "Download on"
         },
         {
             "title": "Picoteo",
@@ -15,8 +15,8 @@
             "altText": "portfolio picoteo",
             "modalId": "picoteo",
             "description": "Picoteo is a casual game where you help a bandurria feed in its wetland while avoiding trash and predators.<br/>Eat, score points and climb the leaderboard!<br/>Picoteo was developed for and premiered at the 2024 edition of the <a class='description-link' href='https://9punto5.cl'>9.5</a> conference.",
-            "link": "https://ibis-interactive.itch.io/picoteo",
-            "playOn": "Play"
+            "link": [{"store":"Itch.io", "icon": "fa-brands fa-itch-io","url":"https://ibis-interactive.itch.io/picoteo"}],
+            "playOn": "Play on"
         },
         {
             "title": "Don Pepe and His Balloons (Alpha)",
@@ -24,8 +24,8 @@
             "altText": "portfolio don pepe and his balloons",
             "modalId": "donpepe",
             "description": "After remembering his tragic and violent past, Don Pepe had a million-dollar idea: channel that violence into balloons... water balloons! <br/> Don Pepe's great water balloon tournament has gathered the neighborhood's most skilled fighters, who will fill and throw their balloons until only one remains dry. Who will win?",
-            "link": "https://ibis-interactive.itch.io/don-pepe-y-sus-globos",
-            "playOn": "Play on itch.io"
+            "link": [{"store":"Itch.io", "icon": "fa-brands fa-steam","url":"https://store.steampowered.com/app/4079810/Don_Pepe_y_sus_globos/"}],
+            "playOn": "Play on"
         },
         {
             "title": "You're Next (DEMO)",
@@ -33,8 +33,8 @@
             "altText": "portfolio you're next",
             "modalId": "yourenext",
             "description": "Six friends meet up to party in a creepy, old mansion. What could go wrong? A lot - there are rumors and creepypastas gaining traction about a video game killer that's murdering people in the real world, leaving its signature mark. A warning to its next victim: YOU'RE NEXT.",
-            "link": "https://njaramillo.itch.io/youre-next",
-            "playOn": "Play on itch.io"
+            "link": [{"store":"Itch.io", "icon": "fa-brands fa-itch-io","url":"https://njaramillo.itch.io/youre-next"}],
+            "playOn": "Play on"
         },
         {
             "title": "Blade of the Overlord",
@@ -42,8 +42,8 @@
             "altText": "portfolio blade of the overlord",
             "modalId": "bladeoftheoverlord",
             "description": "Robin, Connie and Jake are a group of friends that have played the Void Wars trading card game since they were kids. Now, older and facing more grown-up problems, they are drawn back to the card game after a nostalgic edition gets reprinted, including a very special card that is very dear to Robin: the famed Blade of the Overlord. The catch? This new version of the card was only printed once, and has still not been found. The friends will try their luck in finding it, with different opinions on what they would do if they managed to pull it.",
-            "link": "https://njaramillo.itch.io/blade-of-the-overlord",
-            "playOn": "Play on itch.io"
+            "link": [{"store":"Itch.io", "icon": "fa-brands fa-itch-io","url":"https://njaramillo.itch.io/blade-of-the-overlord"}],
+            "playOn": "Play on"
         }
     ]
 }
