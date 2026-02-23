@@ -9,9 +9,12 @@
   "footer.contact": "Contáctanos y síguenos en:",
   "nav.lang": "ES",
   "home.portfolio": "Nuestros juegos",
-  "about.title": "¿Quiénes somos?",
+  "about.title": "Acerca de Nosotros",
+  "about.subtitle": "¿Quiénes somos?",
   "about.description": "Ibis Interactive es un grupo de amantes de los videojuegos y artes visuales ubicado en Valdivia, Chile. Con orígenes en las Global Game Jams desde 2020, el grupo creció y tomó impulso en 2023, formalizandose en 2025.<br/> Ibis busca crear experiencias únicas, con historias cautivantes y arte icónico.",
   "portfolio.title": "Nuestros Juegos",
   "portfolio.text": "Una pequeña lista de nuestros juegos",
-  "team.title": "Nuestro Equipo"
+  "team.title": "Nuestro Equipo",
+  "mainGame.title": "Don Pepe y sus globos",
+  "mainGame.description": "Un día, Don Pepe tuvo una idea para ganar algo de dinero rápido: vender globos de agua a los niños de su vecindario. Lo que comenzó como un simple juego terminó convirtiéndose en un deporte legítimo donde los competidores se enfrentan lanzándose globos de agua entre sí, con solo uno de ellos prevaleciendo: el último que quede seco. ¿Puedes ser el campeón?"
 }

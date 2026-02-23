@@ -9,9 +9,12 @@
   "footer.contact": "Contact us and follow us on:",
   "nav.lang": "EN",
   "home.portfolio": "Our games",
-  "about.title": "Who are we?",
+  "about.title": "About Us",
+  "about.subtitle": "Who are we?",
   "about.description": "Ibis Interactive is a group of video game and visual arts enthusiasts located in Valdivia, Chile. With origins in the Global Game Jams since 2020, the group grew and gained momentum in 2023, formalizing in 2025. <br/> Ibis seeks to create unique experiences, with captivating stories and iconic art.",
   "portfolio.title": "Our Games",
   "portfolio.text": "A small list of our games",
-  "team.title": "Our Team"
+  "team.title": "Our Team",
+  "mainGame.title": "Don Pepe y sus globos",
+  "mainGame.description": "One day, Don Pepe had an idea to make a quick buck: sell water balloons to his neighborhood's kids. What started as a simple game ended up turning into a legitimate sport where competitors square up to throw water balloons at each other with only one of them prevailing: the last one that's still dry. Can you be the champion?"
 }

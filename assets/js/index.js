@@ -2,6 +2,7 @@
 
 // Cargar los componentes
 loadComponent('/views/components/index/about.html', 'about');
+loadComponent('/views/components/index/main-game.html', 'main-game');
 loadComponent('/views/components/index/home.html', 'headerwrap');
 loadComponent('/views/components/index/portfolio.html', 'portfolio');
 loadComponent('/views/components/index/services.html', 'services');

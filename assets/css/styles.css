@@ -351,14 +351,24 @@ a:after {
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
+#navbarSpacer {
+	padding-top: 99px;
+}
 
-#home-section {
-	padding-top: 70px
+#main-game {
+	position: relative;
+	width: 100%;;
+	overflow: hidden; /* Importante para contener la imagen */
+	z-index: 0;
+	background: #2d333f;
+	color: white;
+  }
+#main-game h2 {
+	color: white;
 }
 
 #headerwrap {
 	position: relative;
-	padding-top: 120px;
 	text-align: center;
 	min-height: 850px;
 	width: 100%;
