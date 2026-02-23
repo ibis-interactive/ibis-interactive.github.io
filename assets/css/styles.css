@@ -366,6 +366,9 @@ a:after {
 #main-game h2 {
 	color: white;
 }
+#carouselExampleFade {
+	width: 100%;
+}
 
 #headerwrap {
 	position: relative;
