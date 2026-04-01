@@ -1,0 +1,195 @@
+{
+  "teamMembers": [
+    {
+      "name": "Nico",
+      "img": "/assets/img/team/nico.webp",
+      "roles": [
+        { "icon": "fa-solid fa-book", "name": { "en": "Narrative Director", "es": "Director Narrativo" } },
+        { "icon": "fa-solid fa-code", "name": { "en": "Lead Programmer", "es": "Programador Líder" } }
+      ],
+      "description": {
+        "en": "Unity developer since 2016. A fan of stories in all their forms. Rumor says he doesn't sleep...",
+        "es": "Desarrollador Unity desde 2016. Fanático de las historias en todas sus formas. Dicen que no duerme..."
+      },
+      "favorites": {
+        "en": "Xenoblade Chronicles, Metroid Prime, Cave Story, Eternal Darkness, Clone Hero, Blade Runner",
+        "es": "Xenoblade Chonicles, Metroid Prime, Cave Story, Eternal Darkness, Clone Hero, Blade Runner"
+      },
+      "links": [
+        { "href": "https://njaramillo.itch.io", "icon": "fa-brands fa-itch-io", "label": { "en": "Nico personal itch.io page", "es": "Nico personal itch.io page" } }
+      ]
+    },
+    {
+      "name": "Cris",
+      "img": "/assets/img/team/cris.webp",
+      "roles": [
+        { "icon": "fa-solid fa-music", "name": { "en": "Audio Director", "es": "Director de Audio" } }
+      ],
+      "description": {
+        "en": "A bored music teacher looking for the secret melody to open a portal and escape to another dimension.",
+        "es": "Un profe de música aburrido en busca de la melodía secreta para abrir un portal y escapar a otra dimensión."
+      },
+      "favorites": {
+        "en": "Age of Empires II, The Settlers, Donkey Kong series",
+        "es": "Age of Empires II, The Settlers, Donkey Kong saga"
+      },
+      "links": [
+        { "href": "https://on.soundcloud.com/iBMX5uMXVjp1M4da8", "icon": "fa-brands fa-soundcloud", "label": { "en": "Cris soundcloud page", "es": "Cris soundcloud page" } },
+        { "href": "https://crist-corvus.itch.io", "icon": "fa-brands fa-itch-io", "label": { "en": "Cris personal itch.io page", "es": "Cris personal itch.io page" } }
+      ]
+    },
+    {
+      "name": "Jaji",
+      "img": "/assets/img/team/jaji.webp",
+      "roles": [
+        { "icon": "fa-solid fa-palette", "name": { "en": "Art Director", "es": "Directora de Arte" } }
+      ],
+      "description": {
+        "en": "Artist conjuring ideas with colors and shapes since time immemorial.",
+        "es": "Artista invocando ideas con colores y formas desde tiempos inmemoriales."
+      },
+      "favorites": {
+        "en": "The Legend of Zelda series, Omori, Project Sekai",
+        "es": "The Legend of Zelda saga, Omori, Project Sekai"
+      },
+      "links": [
+        { "href": "https://www.instagram.com/jajiwis", "icon": "fa-brands fa-instagram", "label": { "en": "Jaji's Instagram profile", "es": "Jaji's Instagram profile" } },
+        { "href": "https://jajiwis.itch.io", "icon": "fa-brands fa-itch-io", "label": { "en": "Jaji personal itch.io page", "es": "Jaji personal itch.io page" } }
+      ]
+    },
+    {
+      "name": "Seba",
+      "img": "/assets/img/team/seba.webp",
+      "roles": [
+        { "icon": "fa-solid fa-compass-drafting", "name": { "en": "Game Designer", "es": "Game Designer" } },
+        { "icon": "fa-solid fa-code", "name": { "en": "Programmer", "es": "Programador" } }
+      ],
+      "description": {
+        "en": "A developer who masters the ancient art of conjuring game mechanics that give life to the inanimate.",
+        "es": "Un desarrollador que domina el arte antiguo de conjurar mecánicas de juego que dan vida a lo inerte."
+      },
+      "favorites": {
+        "en": "Hollow Knight, Terranigma, The Binding of Isaac: Rebirth",
+        "es": "Hollow Knight, Terranigma, The Binding of Isaac: Rebirth"
+      },
+      "links": [
+        { "href": "https://zebax2010.itch.io", "icon": "fa-brands fa-itch-io", "label": { "en": "Seba personal itch.io page", "es": "Seba personal itch.io page" } }
+      ]
+    },
+    {
+      "name": "Marco",
+      "img": "/assets/img/team/marco.webp",
+      "roles": [
+        { "icon": "fa-solid fa-cubes", "name": { "en": "3D/2D Animator", "es": "Animador 3D/2D" } },
+        { "icon": "fa-solid fa-code", "name": { "en": "Programmer", "es": "Programador" } }
+      ],
+      "description": {
+        "en": "A 2D/3D apprentice who transforms ideas into motion, bringing characters and their stories to life.",
+        "es": "Aprendiz del mundo 2d/3d que transforma ideas en movimiento dando vida a personajes y sus historias."
+      },
+      "favorites": {
+        "en": "Dark Souls, Castlevania, Warhammer 40K, Metroid",
+        "es": "Dark Souls, Castlevania, Warhammer 40K, Metroid"
+      },
+      "links": [
+        { "href": "https://ravield.itch.io", "icon": "fa-brands fa-itch-io", "label": { "en": "Marco personal itch.io page", "es": "Marco personal itch.io page" } }
+      ]
+    },
+    {
+      "name": "Israel",
+      "img": "/assets/img/team/israel.webp",
+      "roles": [
+        { "icon": "fa-solid fa-panorama", "name": { "en": "Level Designer", "es": "Level Designer" } },
+        { "icon": "fa-solid fa-code", "name": { "en": "Programmer", "es": "Programador" } }
+      ],
+      "description": {
+        "en": "A traditional developer creating and destroying worlds to change the pace.",
+        "es": "Un desarrollador tradicional creando y destruyendo mundos para cambiar de ritmo."
+      },
+      "favorites": {
+        "en": "The Legend of Zelda series, Assassin's Creed series, NFS & Burnout series, Jak and Daxter, Ratchet & Clank",
+        "es": "The Legend of Zelda saga, Assassin's Creed saga, NFS & Burnout Series, Jak and Daxter saga, Ratchet & Clank saga"
+      },
+      "links": [
+        { "href": "https://iadr.itch.io", "icon": "fa-brands fa-itch-io", "label": { "en": "Israel personal itch.io page", "es": "Israel personal itch.io page" } }
+      ]
+    },
+    {
+      "name": "Seuko",
+      "img": "/assets/img/team/seuko.jpg",
+      "roles": [
+        { "icon": "fa-solid fa-gears", "name": { "en": "DevOps", "es": "DevOps" } },
+        { "icon": "fa-solid fa-code", "name": { "en": "Programmer", "es": "Programador" } }
+      ],
+      "description": {
+        "en": "Eternal apprentice of the dark art of deployments, he's been seen coding or designing. They say he plays more for the OSTs than anything else.",
+        "es": "Eterno aprendiz del oscuro arte de los despliegues, se le ha visto programando o diseñando. Dicen que juega más por los OST que por otra cosa"
+      },
+      "favorites": {
+        "en": "Persona 3, Deltarune, Kenshi, Megaman X saga",
+        "es": "Persona 3, Deltarune, Kenshi, saga Megaman X"
+      },
+      "links": [
+        { "href": "https://seukod.itch.io/", "icon": "fa-brands fa-itch-io", "label": { "en": "Seuko personal itch.io page", "es": "Seuko personal itch.io page" } }
+      ]
+    },
+    {
+      "name": "Luis",
+      "img": "/assets/img/team/luzhow.jpg",
+      "roles": [
+        { "icon": "fa-solid fa-gears", "name": { "en": "DevOps", "es": "DevOps" } },
+        { "icon": "fa-solid fa-code", "name": { "en": "Programmer", "es": "Programador" } }
+      ],
+      "description": {
+        "en": "'I became a developer to play video games during work hours'",
+        "es": "'Me hice desarrollador para jugar videojuegos en horario laboral'"
+      },
+      "favorites": {
+        "en": "Tony Hawk's Pro Skater 2, Clone Hero, Super Mario 64, Super Meat Boy",
+        "es": "Tony Hawk's Pro Skater 2, Clone Hero, Super Mario 64, Super Meat Boy"
+      },
+      "links": [
+        { "href": "https://lbarrientosf.vercel.app/", "icon": "fa-solid fa-briefcase", "label": { "en": "Luzhow personal portfolio", "es": "Portafolio personal Luzhow" } }
+      ]
+    },
+    {
+      "name": "Jean Paul",
+      "img": "/assets/img/team/jeanpaul.jpg",
+      "roles": [
+        { "icon": "fa-solid fa-palette", "name": { "en": "2D Illustrator", "es": "Ilustrador 2D" } },
+        { "icon": "fa-solid fa-cubes", "name": { "en": "3D Designer", "es": "Diseñador 3D" } }
+      ],
+      "description": {
+        "en": "Specialist in creating 2D and 3D assets with more color than a Mario Party game",
+        "es": "Especialista en crear assets 2D y 3D con más color que una partida de Mario Party"
+      },
+      "favorites": {
+        "en": "Mario Party 3, Vampire Savior: The Lord of the Vampire (Darkstalkers 3), Mario Kart Double Dash, The King of Fighter's saga, Sengoku Basara Saga",
+        "es": "Mario Party 3, Vampire Savior: The Lord of the Vampire (Darkstalkers 3), Mario Kart Double Dash,Saga The King of Fighter, Saga Sengoku Basara"
+      },
+      "links": [
+        { "href": "#", "icon": "fa-solid fa-briefcase", "label": { "en": "JP personal portfolio", "es": "Portafolio personal JP" } }
+      ]
+    },
+    {
+      "name": "NekromancerX",
+      "img": "/assets/img/team/nekromancerx.jpg",
+      "roles": [
+        { "icon": "fa-solid fa-bullhorn", "name": { "en": "Marketing", "es": "Marketing" } },
+        { "icon": "fa-solid fa-paintbrush", "name": { "en": "Graphic Designer", "es": "Diseñador gráfico" } }
+      ],
+      "description": {
+        "en": "Life only has the meaning you give it.",
+        "es": "La vida solo tiene el sentido que tu le des."
+      },
+      "favorites": {
+        "en": " Skyrim, World of Warcraft, Killing Floor",
+        "es": " Skyrim, World of Warcraft, Killing Floor"
+      },
+      "links": [
+        { "href": "https://www.twitch.tv/elnekromancerx", "icon": "fa-brands fa-twitch", "label": { "en": "NekromancerX Twitch channel", "es": "Canal de Twitch de NekromancerX" } },
+        { "href": "https://www.youtube.com/channel/UC1zezwOQfUWUZ5KaZtgbRMg", "icon": "fa-brands fa-youtube", "label": { "en": "NekromancerX YouTube channel", "es": "Canal de YouTube de NekromancerX" } }
+      ]
+    }
+  ]
+}

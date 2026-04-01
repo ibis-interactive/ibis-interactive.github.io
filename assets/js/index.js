@@ -15,8 +15,8 @@ function getLang() {
 let reloadTimer = null;
 
 function loadGamesAndTeam(lang) {
-    const gamesFile = `/assets/games.${lang}.json`;
-    const teamFile = `/assets/team.${lang}.json`;
+    const gamesFile = `/assets/games.json`;
+    const teamFile = `/assets/team.json`;
 
     // Clear existing content to avoid duplicates
     $('#gamesList').empty();
@@ -24,14 +24,17 @@ function loadGamesAndTeam(lang) {
 
     $.getJSON(gamesFile, function (data) {
         const games = data.games || [];
-        const gridSize = games.length <= 4 ? 'col-md-6' : 'col-md-4';
+        const locale = (lang || getLang() || 'en').split('-')[0];
         games.forEach(function (game) {
+          const playOnText = (game.playOn && (game.playOn[locale] || game.playOn.en)) || game.playOn || '';
           const linkButtons = (Array.isArray(game.link) ? game.link : []).map(linkInfo => {
-              return `<a href="${linkInfo.url}" class="btn btn-stores"><i class="${linkInfo.icon}"></i> ${game.playOn} ${linkInfo.store}</a>`;
+              return `<a href="${linkInfo.url}" class="btn btn-stores my-1"><i class="${linkInfo.icon}"></i> ${playOnText} ${linkInfo.store}</a>`;
           }).join(' ');
 
+          const description = (game.description && (game.description[locale] || game.description.en)) || game.description || '';
+
           const portfolioHtml = `
-          <div class="col-12 ${gridSize} mb-4">
+          <div class="col-xs-12 col-md-6 col-lg-4  mb-4">
             <div class="grid">
               <div class="portfolio-card">
                 <img class="img-responsive" src="${game.imgSrc}" alt="${game.altText}">
@@ -49,7 +52,7 @@ function loadGamesAndTeam(lang) {
                 </div>
                 <div class="modal-body centered">
                   <p><img class="img-responsive portfolio-card" src="${game.imgSrc}" alt="${game.altText}"></p>
-                  <p class="modal-text">${game.description}</p>
+                  <p class="modal-text">${description}</p>
                   ${linkButtons}
                 </div>
               </div>
@@ -64,33 +67,39 @@ function loadGamesAndTeam(lang) {
     });
 
     $.getJSON(teamFile, function (data) {
-        let teamMembers = data.teamMembers || [];
-        teamMembers.forEach(member => {
-            let links = '';
-            (member.links || []).forEach(link => {
-                links += `<a href="${link.href}" aria-label="${link.label}"><i class="fa ${link.icon}"></i></a>`;
-            });
-
-            let roles = '';
-            (member.roles || []).forEach((role, idx) => {
-                if (idx != 0) roles += " - "
-                roles += `${role.name} <span class="${role.icon}"/>`;
-            });
-
-
-            let memberHTML = `
-          <div class="col-lg-4 centered pad">
-            <img class="img img-circle" src="${member.img}" height="120px" width="120px" alt="team member ${member.name}">
-            <h4><strong>${member.name}</strong></h4>
-            <h6>${roles}</h6>
-            <p>${member.description}<br><strong>Favorite games:</strong> ${member.favorites}</p>
-            ${links}
-          </div>
-        `;
-            $('#teamMembers').append(memberHTML);
+      let teamMembers = data.teamMembers || [];
+      const locale = (lang || getLang() || 'en').split('-')[0];
+      teamMembers.forEach(member => {
+        let links = '';
+        (member.links || []).forEach(link => {
+          const label = (link.label && (link.label[locale] || link.label.en)) || '';
+          links += `<a href="${link.href}" aria-label="${label}"><i class="fa ${link.icon}"></i></a>`;
         });
+
+        let roles = '';
+        (member.roles || []).forEach((role, idx) => {
+          if (idx != 0) roles += " - ";
+          const roleName = (role.name && (role.name[locale] || role.name.en)) || role.name || '';
+          roles += `${roleName} <span class="${role.icon}"></span>`;
+        });
+
+        const description = (member.description && (member.description[locale] || member.description.en)) || member.description || '';
+        const favorites = (member.favorites && (member.favorites[locale] || member.favorites.en)) || member.favorites || '';
+        const favoritesLabel = (window.currentTranslations && window.currentTranslations['team.favorites']) || 'Favorite games';
+
+        let memberHTML = `
+        <div class="col-lg-4 centered pad">
+        <img class="img img-circle" src="${member.img}" height="120px" width="120px" alt="team member ${member.name}">
+        <h4><strong>${member.name}</strong></h4>
+        <h6>${roles}</h6>
+        <p>${description}<br><strong>${favoritesLabel}:</strong> ${favorites}</p>
+        ${links}
+        </div>
+      `;
+        $('#teamMembers').append(memberHTML);
+      });
     }).fail(function () {
-        console.warn('Could not load', teamFile);
+      console.warn('Could not load', teamFile);
     });
 }
 

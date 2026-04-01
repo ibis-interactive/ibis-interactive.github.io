@@ -1,11 +1,13 @@
 ;(function(){
   const DEFAULT_LANG = 'es';
+  window.currentTranslations = {};
 
   function getUrlLang(){
     try{ const p = new URLSearchParams(window.location.search); return p.get('lang'); }catch(e){return null}
   }
 
   function applyTranslations(data){
+    window.currentTranslations = data;
     document.querySelectorAll('[data-i18n]').forEach(function(el){
       const key = el.getAttribute('data-i18n');
       if(!key) return;

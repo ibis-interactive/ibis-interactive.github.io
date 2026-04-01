@@ -323,7 +323,7 @@ blockquote cite:before {
 
 /* Links */
 a {
-	color: #4abcc5;
+	color: #ff4646;
 	word-wrap: break-word;
 	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
 	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -458,6 +458,7 @@ a:after {
 #about img {
 	max-height: 400px;
 	max-width: 100%;
+	object-fit: contain;
 }
 
 #services {

@@ -1,0 +1,79 @@
+{
+    "games": [
+        {
+            "title": "LongaMóvil",
+            "imgSrc": "/assets/img/portfolio/longamovil.png",
+            "altText": "portfolio longamovil",
+            "modalId": "lonvamovil",
+            "description": {
+                "en": "Welcome to the LongaMóvil! <br/>Your mission is to serve the best choripanes, with the perfect cooking and precise condiments, to support the MSPLSC and prove once and for all that the true longaniza is Sancarlina.<br/>Official video game of the Chilean film <a href='https://www.instagram.com/denominaciondeorigenfilm/'>Denominación de Origen </a>, in theaters from April 24th.",
+                "es": "¡Bienvenidx al LongaMóvil! <br/>Tu misión es servir los mejores choripanes, con la cocción perfecta y los condimentos precisos, para apoyar al MSPLSC y demostrar de una vez por todas que la verdadera longaniza es Sancarlina.<br/>Videojuego oficial de la película chilena <a href='https://www.instagram.com/denominaciondeorigenfilm/'>Denominación de Origen </a>, en cines desde el 24 de Abril."
+            },
+            "link": [{"store": "Google Play", "icon":"fa-brands fa-google-play", "url": "https://play.google.com/store/apps/details?id=com.ibisinteractive.longamovil"}, {"store": "App Store",  "icon":"fa-brands fa-app-store-ios", "url": "https://apps.apple.com/cl/app/longamovil/id6744369874"}],
+            "playOn": {
+                "en": "Download on",
+                "es": "Descargalo en"
+            }
+        },
+        {
+            "title": "Picoteo",
+            "imgSrc": "/assets/img/portfolio/picoteo.png",
+            "altText": "portfolio picoteo",
+            "modalId": "picoteo",
+            "description": {
+                "en": "Picoteo is a casual game where you must help a bandurria feed in the wetland it inhabits, while avoiding trash and predators.<br/>Eat, score points, and climb the leaderboard!<br/>Picoteo was developed for and premiered at the 2024 edition of the <a class='description-link' href='https://9punto5.cl'>9.5</a> conference.",
+                "es": "Picoteo es un juego casual donde debes ayudar a una bandurria a alimentarse en el humedal que habita, mientras evita la basura y a sus depredadores.<br/>¡Come, suma puntos y trepa en la tabla de posiciones!<br/>Picoteo fue desarrollado para y estrenado en la edición 2024 de la conferencia <a class='description-link' href='https://9punto5.cl'>9.5</a>."
+            },
+            "link": [{"store":"Itch.io", "icon": "fa-brands fa-itch-io","url":"https://ibis-interactive.itch.io/picoteo"}],
+            "playOn": {
+                "en": "Play on",
+                "es": "Juegalo en"
+            }
+        },
+        {
+            "title": "Don Pepe y sus globos (DEMO)",
+            "imgSrc": "/assets/img/portfolio/don-pepe.png",
+            "altText": "portfolio don pepe y sus globos",
+            "modalId": "donpepe",
+            "description": {
+                "en": "After recalling his tragic and violent past, Don Pepe came up with a million-dollar idea: channel that violence into balloons... water balloons! <br> The great Don Pepe water balloon tournament has gathered the most skilled fighters in the neighborhood, who will fill and throw their water balloons until only one remains dry. Who will win?",
+                "es": "Luego de recordar su trágico y violento pasado, a Don Pepe se le ocurrió una idea millonaria: canalizar esa violencia en globos... ¡de agua! <br> El gran torneo de globos de agua de Don Pepe ha reunido a los más hábiles combatientes del barrio, quienes llenarán y lanzarán sus globos de agua hasta que solo uno quede seco. ¿Quién ganará?"
+            },
+            "link": [{"store":"Steam", "icon": "fa-brands fa-steam","url":"https://store.steampowered.com/app/4079810/Don_Pepe_y_sus_globos/"}],
+            "playOn": {
+                "en": "Wishlist on",
+                "es": "Agregar a la lista de deseos de"
+            }
+        },
+        {
+            "title": "You're Next (DEMO)",
+            "imgSrc": "/assets/img/portfolio/youre-next.png",
+            "altText": "portfolio you're next",
+            "modalId": "yourenext",
+            "description": {
+                "en": "Six friends meet up to party in a creepy, old mansion. What could go wrong? A lot - there are rumors and creepypastas gaining traction about a video game killer that's murdering people in the real world, leaving its signature mark. A warning to its next victim: YOU'RE NEXT.",
+                "es": "Seis amigos se reúnen para festejar en una mansión antigua y espeluznante. ¿Qué podría salir mal? Mucho: hay rumores y creepypastas que ganan fuerza sobre un asesino de videojuegos que está matando personas en el mundo real, dejando su marca característica. Una advertencia para su próxima víctima: TÚ ERES EL PRÓXIMO."
+            },
+            "link": [{"store":"Itch.io", "icon": "fa-brands fa-itch-io","url":"https://njaramillo.itch.io/youre-next"}],
+            "playOn": {
+                "en": "Download on",
+                "es": "Descargalo en"
+            }
+        },
+        {
+            "title": "Blade of the Overlord",
+            "imgSrc": "/assets/img/portfolio/blade.png",
+            "altText": "portfolio blade of the overlord",
+            "modalId": "bladeoftheoverlord",
+            "description": {
+                "en": "Robin, Connie and Jake are a group of friends that have played the Void Wars trading card game since they were kids. Now, older and facing more grown-up problems, they are drawn back to the card game after a nostalgic edition gets reprinted, including a very special card that is very dear to Robin: the famed Blade of the Overlord. The catch? This new version of the card was only printed once, and has still not been found. The friends will try their luck in finding it, with different opinions on what they would do if they managed to pull it.",
+                "es": "Robin, Connie y Jake son un grupo de amigos que han jugado al juego de cartas coleccionables Void Wars desde que eran niños. Ahora, mayores y enfrentando problemas más adultos, se sienten atraídos de nuevo al juego de cartas después de que se reimprima una edición nostálgica, incluyendo una carta muy especial que es muy querida para Robin: la famosa Blade of the Overlord. ¿El problema? Esta nueva versión de la carta solo se imprimió una vez y aún no se ha encontrado. Los amigos intentarán su suerte para encontrarla, con diferentes opiniones sobre lo que harían si lograran obtenerla."
+            },
+            "link": [{"store":"Itch.io", "icon": "fa-brands fa-itch-io","url":"https://njaramillo.itch.io/blade-of-the-overlord"}],
+            "playOn": {
+                "en": "Download on",
+                "es": "Descargalo en"
+            }
+        }
+    ]
+}
