@@ -4,7 +4,7 @@
       "name": "Nico",
       "img": "/assets/img/team/nico.webp",
       "roles": [
-        { "icon": "fa-solid fa-book", "name": { "en": "Narrative Director", "es": "Director Narrativo" } },
+        { "icon": "fa-solid fa-clapperboard", "name": { "en": "Director", "es": "Director" } },
         { "icon": "fa-solid fa-code", "name": { "en": "Lead Programmer", "es": "Programador Líder" } }
       ],
       "description": {
@@ -12,11 +12,12 @@
         "es": "Desarrollador Unity desde 2016. Fanático de las historias en todas sus formas. Dicen que no duerme..."
       },
       "favorites": {
-        "en": "Xenoblade Chronicles, Metroid Prime, Cave Story, Eternal Darkness, Clone Hero, Blade Runner",
-        "es": "Xenoblade Chonicles, Metroid Prime, Cave Story, Eternal Darkness, Clone Hero, Blade Runner"
+        "en": "Xenoblade Chronicles, Cave Story, Metroid Prime, Eternal Darkness, YARG",
+        "es": "Xenoblade Chronicles, Cave Story, Metroid Prime, Eternal Darkness, YARG"
       },
       "links": [
-        { "href": "https://njaramillo.itch.io", "icon": "fa-brands fa-itch-io", "label": { "en": "Nico personal itch.io page", "es": "Nico personal itch.io page" } }
+        { "href": "https://njaramillo.itch.io", "icon": "fa-brands fa-itch-io", "label": { "en": "Nico's personal itch.io page", "es": "Nico's personal itch.io page" } },
+        { "href": "https://www.instagram.com/njaramillo.ortiz", "icon": "fa-brands fa-instagram", "label": { "en": "Nico's Instagram profile", "es": "Nico's Instagram profile" } }
       ]
     },
     {
