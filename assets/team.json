@@ -32,7 +32,7 @@
       },
       "favorites": {
         "en": "Age of Empires II, The Settlers, Donkey Kong series",
-        "es": "Age of Empires II, The Settlers, Donkey Kong saga"
+        "es": "Age of Empires II, The Settlers, saga Donkey Kong"
       },
       "links": [
         { "href": "https://on.soundcloud.com/iBMX5uMXVjp1M4da8", "icon": "fa-brands fa-soundcloud", "label": { "en": "Cris soundcloud page", "es": "Cris soundcloud page" } },
@@ -50,11 +50,11 @@
         "es": "Artista invocando ideas con colores y formas desde tiempos inmemoriales."
       },
       "favorites": {
-        "en": "The Legend of Zelda series, Omori, Project Sekai",
-        "es": "The Legend of Zelda saga, Omori, Project Sekai"
+        "en": "The Legend of Zelda series, Omori, Project Sekai, Pokémon series",
+        "es": "saga The Legend of Zelda, Omori, Project Sekai, saga Pokémon"
       },
       "links": [
-        { "href": "https://www.instagram.com/jajiwis", "icon": "fa-brands fa-instagram", "label": { "en": "Jaji's Instagram profile", "es": "Jaji's Instagram profile" } },
+        { "href": "https://www.instagram.com/jaaaaji88", "icon": "fa-brands fa-instagram", "label": { "en": "Jaji's Instagram profile", "es": "Jaji's Instagram profile" } },
         { "href": "https://jajiwis.itch.io", "icon": "fa-brands fa-itch-io", "label": { "en": "Jaji personal itch.io page", "es": "Jaji personal itch.io page" } }
       ]
     },
@@ -70,8 +70,8 @@
         "es": "Un desarrollador que domina el arte antiguo de conjurar mecánicas de juego que dan vida a lo inerte."
       },
       "favorites": {
-        "en": "Hollow Knight, Terranigma, The Binding of Isaac: Rebirth",
-        "es": "Hollow Knight, Terranigma, The Binding of Isaac: Rebirth"
+        "en": "Hollow Knight series, Terranigma, The Binding of Isaac: Rebirth",
+        "es": "saga Hollow Knight, Terranigma, The Binding of Isaac: Rebirth"
       },
       "links": [
         { "href": "https://zebax2010.itch.io", "icon": "fa-brands fa-itch-io", "label": { "en": "Seba personal itch.io page", "es": "Seba personal itch.io page" } }
@@ -109,7 +109,7 @@
       },
       "favorites": {
         "en": "The Legend of Zelda series, Assassin's Creed series, NFS & Burnout series, Jak and Daxter, Ratchet & Clank",
-        "es": "The Legend of Zelda saga, Assassin's Creed saga, NFS & Burnout Series, Jak and Daxter saga, Ratchet & Clank saga"
+        "es": "saga The Legend of Zelda, saga Assassin's Creed, NFS & Burnout Series, saga Jak and Daxter, saga Ratchet & Clank"
       },
       "links": [
         { "href": "https://iadr.itch.io", "icon": "fa-brands fa-itch-io", "label": { "en": "Israel personal itch.io page", "es": "Israel personal itch.io page" } }
@@ -117,7 +117,7 @@
     },
     {
       "name": "Seuko",
-      "img": "/assets/img/team/seuko.jpg",
+      "img": "/assets/img/team/seuko.webp",
       "roles": [
         { "icon": "fa-solid fa-gears", "name": { "en": "DevOps", "es": "DevOps" } },
         { "icon": "fa-solid fa-code", "name": { "en": "Programmer", "es": "Programador" } }
@@ -127,7 +127,7 @@
         "es": "Eterno aprendiz del oscuro arte de los despliegues, se le ha visto programando o diseñando. Dicen que juega más por los OST que por otra cosa"
       },
       "favorites": {
-        "en": "Persona 3, Deltarune, Kenshi, Megaman X saga",
+        "en": "Persona 3, Deltarune, Kenshi, Megaman X series",
         "es": "Persona 3, Deltarune, Kenshi, saga Megaman X"
       },
       "links": [
@@ -136,7 +136,7 @@
     },
     {
       "name": "Luis",
-      "img": "/assets/img/team/luzhow.jpg",
+      "img": "/assets/img/team/lucho.webp",
       "roles": [
         { "icon": "fa-solid fa-gears", "name": { "en": "DevOps", "es": "DevOps" } },
         { "icon": "fa-solid fa-code", "name": { "en": "Programmer", "es": "Programador" } }
@@ -165,8 +165,8 @@
         "es": "Especialista en crear assets 2D y 3D con más color que una partida de Mario Party"
       },
       "favorites": {
-        "en": "Mario Party 3, Vampire Savior: The Lord of the Vampire (Darkstalkers 3), Mario Kart Double Dash, The King of Fighter's saga, Sengoku Basara Saga",
-        "es": "Mario Party 3, Vampire Savior: The Lord of the Vampire (Darkstalkers 3), Mario Kart Double Dash,Saga The King of Fighter, Saga Sengoku Basara"
+        "en": "Mario Party 3, Vampire Savior: The Lord of the Vampire (Darkstalkers 3), Mario Kart Double Dash, The King of Fighter's series, Sengoku Basara series",
+        "es": "Mario Party 3, Vampire Savior: The Lord of the Vampire (Darkstalkers 3), Mario Kart Double Dash, saga The King of Fighter, saga Sengoku Basara"
       },
       "links": [
         { "href": "https://www.instagram.com/jeanporu_/", "icon": "fa-brands fa-instagram", "label": { "en": "JP professional Instagram", "es": "Instagram profesional JP" } }
@@ -184,8 +184,8 @@
         "es": "La vida solo tiene el sentido que tu le des."
       },
       "favorites": {
-        "en": " Skyrim, World of Warcraft, Killing Floor",
-        "es": " Skyrim, World of Warcraft, Killing Floor"
+        "en": "Skyrim, World of Warcraft, Killing Floor",
+        "es": "Skyrim, World of Warcraft, Killing Floor"
       },
       "links": [
         { "href": "https://www.twitch.tv/elnekromancerx", "icon": "fa-brands fa-twitch", "label": { "en": "NekromancerX Twitch channel", "es": "Canal de Twitch de NekromancerX" } },
