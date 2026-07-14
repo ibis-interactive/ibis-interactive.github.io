@@ -36,8 +36,8 @@
             "altText": "portfolio don pepe y sus globos",
             "modalId": "donpepe",
             "description": {
-                "en": "After recalling his tragic and violent past, Don Pepe came up with a million-dollar idea: channel that violence into balloons... water balloons! <br> The great Don Pepe water balloon tournament has gathered the most skilled fighters in the neighborhood, who will fill and throw their water balloons until only one remains dry. Who will win?",
-                "es": "Luego de recordar su trágico y violento pasado, a Don Pepe se le ocurrió una idea millonaria: canalizar esa violencia en globos... ¡de agua! <br> El gran torneo de globos de agua de Don Pepe ha reunido a los más hábiles combatientes del barrio, quienes llenarán y lanzarán sus globos de agua hasta que solo uno quede seco. ¿Quién ganará?"
+                "en": "Don Pepe is the host of the hottest game show on the air, where contestants from all over the world clash in intense water balloon fights!<br />What started as a simple plan to scam children has now grown into a legitimate sport, and there can only be one winner. ¿Do you have what it takes?",
+                "es": "Don Pepe es el presentador del programa de concursos más prendido de la tele, donde concursantes de todo el mundo chocan en intensas batallas con bombitas de agua!<br />Lo que empezó como un simple plan para estafar niños se ha convertido en un auténtico deporte, y sólo puede haber un ganador. ¿Podrás lograrlo?"
             },
             "link": [{"store":"Steam", "icon": "fa-brands fa-steam","url":"https://store.steampowered.com/app/4079810/Don_Pepe_y_sus_globos/"}],
             "playOn": {
