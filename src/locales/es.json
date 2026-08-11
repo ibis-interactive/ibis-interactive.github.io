@@ -7,22 +7,14 @@
   "portfolio": { "title": "Nuestros Juegos", "text": "Una pequeña lista de nuestros juegos" },
   "team": { "title": "Nuestro Equipo", "favorites": "Juegos favoritos", "member": "Integrante del equipo" },
   "mainGame": { "title": "Don Pepe y sus globos", "description": "Don Pepe es el presentador del programa de concursos más prendido de la tele, donde concursantes de todo el mundo chocan en intensas batallas con bombitas de agua.<br/>Lo que empezó como un simple plan para estafar niños se ha convertido en un auténtico deporte, y sólo puede haber un ganador. ¿Podrás lograrlo?", "details": "Conoce el juego" },
-  "donPepe": {
-    "title": "Don Pepe y sus globos",
-    "summary": "Conviértete en campeón de las bombitas de agua en un arena fighter de proyectiles para hasta cuatro jugadores.",
-    "description": "Don Pepe dirige el programa de concursos más prendido de la televisión. Concursantes de todo el mundo se enfrentan en intensas batallas con bombitas de agua para convertirse en el único ganador.",
-    "actions": { "steam": "Ver en Steam", "presskit": "Abrir press kit" },
-    "features": { "title": "Entra a la competencia", "items": ["Combate en solitario o con hasta cuatro jugadores, de forma local o en línea.", "Escoge personajes, escenarios y reglas en el Modo Batalla.", "Supera tu mejor puntuación en el Modo Arcade y conviértete en campeón.", "Descubre la historia de Don Pepe en el Modo Historia.", "Organiza tu propia competencia en el Modo Torneo.", "Lanza, corre, rueda y utiliza objetos para obtener ventaja en cada enfrentamiento."] },
-    "facts": { "title": "Ficha del juego", "developer": "Desarrollador", "release": "Lanzamiento", "players": "Jugadores", "playersValue": "1 a 4, local y en línea", "platform": "Plataforma", "languages": "Idiomas", "languagesValue": "Español e inglés" },
-    "gallery": "Galería", "screenshotAlt": "Captura de Don Pepe y sus globos {{number}}"
-  },
+  "gamePage": { "openImage": "Ampliar captura {{number}}", "enlarge": "Ver en grande", "chooseImage": "Elegir captura", "features": "Entra a la competencia", "facts": { "title": "Ficha del juego", "release": "Lanzamiento", "players": "Jugadores", "platform": "Plataforma", "languages": "Idiomas" }, "gallery": "Galería", "screenshotAlt": "Captura de {{title}} {{number}}" },
   "carousel": { "previous": "Anterior", "next": "Siguiente" },
   "common": { "close": "Cerrar" },
   "privacy": {
     "title": "Política de Privacidad y Uso de Datos Personales",
     "intro": "En <strong>Ibis Interactive</strong> respetamos y protegemos la privacidad de nuestros jugadores. Tratamos los datos de forma responsable, segura y transparente.",
     "collection": { "title": "Recolección de información", "text": "Nuestros juegos <strong>no recopilan información personal identificable</strong>. Recopilamos únicamente información anónima relacionada con la actividad dentro del juego:", "items": ["Duración de las sesiones de juego", "Eventos del usuario, como clics, botones presionados o niveles alcanzados", "Información técnica no identificable, como el sistema operativo o la resolución de pantalla"] },
-    "use": { "title": "Uso y tratamiento de los datos", "text": "Los datos se anonimizan y se utilizan internamente. <strong>No vendemos, compartimos ni transferimos datos a terceros</strong>.", "items": ["Optimizar la experiencia del usuario", "Detectar errores o problemas de rendimiento", "Mejorar nuestros productos y funcionalidades"] },
+    "use": { "title": "Uso y tratamiento de los datos", "text": "Los datos se anonimizan y se utilizan internamente. <strong>No vendemos, compartimos ni transferimos datos a terceros</strong>.<br/>Los datos se utilizan para:", "items": ["Optimizar la experiencia del usuario", "Detectar errores o problemas de rendimiento", "Mejorar nuestros productos y funcionalidades"] },
     "security": { "title": "Seguridad y confidencialidad", "text": "Aplicamos medidas técnicas y organizativas para proteger la información frente a accesos no autorizados, pérdida o manipulación. El acceso está restringido a personal autorizado.", "items": [] },
     "rights": { "title": "Derechos del usuario", "text": "Puedes consultar qué información se recopila o solicitar la eliminación de datos anónimos contactándonos en:", "items": [] },
     "changes": { "title": "Cambios a esta política", "text": "Podemos actualizar esta política. Cualquier modificación será informada dentro del juego o en nuestros canales oficiales.", "items": [] }

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
+.don-pepe-roster { padding: 80px 0; color: var(--dark-color); background: #fff; }
+#don-pepe-roster-title { margin: 0 0 28px; }
+.don-pepe-character-detail {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 64px;
+  min-height: 380px;
+  padding: 36px 48px;
+  border-radius: 16px;
+  background: #f7ece3;
+}
+.don-pepe-character-art { display: grid; place-items: center; min-width: 0; height: 420px; }
+.don-pepe-character-art img { width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+.don-pepe-character-placeholder { display: grid; place-items: center; height: 100%; font-size: 48px; font-weight: 800; text-transform: uppercase; }
+.don-pepe-character-info { min-width: 0; align-self: flex-end; bottom: 0;}
+.don-pepe-character-detail h3 { margin: 0 0 24px; color: var(--dark-color); font-size: 38px; }
+.don-pepe-character-detail dl {
+  padding: 10px 16px 20px;
+  border-radius: 8px;
+  background: color-mix(in srgb, #000 40%, color-mix(in srgb, var(--character-color) 28%, #211532));
+}
+.don-pepe-character-detail dl, .don-pepe-character-detail dd { margin: 0; }
+.don-pepe-character-detail dl > div { display: grid; grid-template-columns: 90px minmax(0, 1fr); align-items: center; gap: 10px; margin-top: 11px; }
+.don-pepe-character-detail dt { font-family: 'Comic Relief', sans-serif; color: #efe9e9; font-size: 11px; text-transform: uppercase; }
+.don-pepe-stat-track { display: grid; grid-template-columns: repeat(5, 1fr); gap: 3px; height: 12px; }
+.don-pepe-stat-segment { height: 100%; overflow: hidden; background: rgba(255, 255, 255, 0.33); transform: skewX(-30deg); }
+.don-pepe-stat-segment > span { display: block; height: 100%; background: var(--character-color); }
+
+.don-pepe-roster-navigation { display: flex; justify-content: flex-end; align-items: center; gap: 12px; margin: 24px 0 16px; }
+.don-pepe-roster-navigation button { min-height: 44px; padding: 10px 16px; border: 1px solid #e5d6ce; border-radius: 4px; color: var(--dark-color); background: #fff; font: inherit; cursor: pointer; }
+.don-pepe-roster-navigation button:hover { background: #f7ece3; }
+.don-pepe-roster-navigation > span { min-width: 54px; font-size: 14px; text-align: center; }
+.don-pepe-character-grid { position: relative; display: flex; gap: 12px; padding: 6px 4px 16px; overflow-x: auto; overscroll-behavior-inline: contain; scroll-snap-type: inline mandatory; }
+.don-pepe-character-card { flex: 0 0 130px; min-width: 0; padding: 0; border: 1px solid #e5d6ce; border-radius: 12px; color: var(--dark-color); background: #fff; text-align: left; overflow: hidden; cursor: pointer; scroll-snap-align: center; }
+.don-pepe-character-card[aria-pressed='true'] { border-color: var(--main-color); background: #f7ece3; }
+.don-pepe-character-card:hover { background: #f7ece3; }
+.don-pepe-character-card img, .don-pepe-character-card .don-pepe-character-placeholder { display: block; width: 100%; height: 110px; padding: 8px; object-fit: contain; }
+.don-pepe-character-card .don-pepe-character-placeholder { display: grid; place-items: center; }
+.don-pepe-character-card > span:last-child { display: block; padding: 10px 12px; font-size: 14px; font-weight: 700; }
+.don-pepe-character-card:focus-visible, .don-pepe-roster-navigation button:focus-visible { outline: 3px solid var(--dark-color); outline-offset: 2px; }
+
+@media (max-width: 767px) {
+  .don-pepe-roster { padding: 50px 0; }
+  .don-pepe-character-detail { grid-template-columns: minmax(0, 1fr); gap: 20px; padding: 24px; }
+  .don-pepe-character-art { height: 310px; }
+  .don-pepe-character-detail h3 { font-size: 28px; }
+  .don-pepe-roster-navigation { justify-content: space-between; }
+  .don-pepe-character-card { flex-basis: 110px; }
+}
+
+@media (max-width: 991px) {
+  .don-pepe-character-detail { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px; padding: 24px; }
+}

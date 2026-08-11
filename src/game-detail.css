@@ -12,6 +12,7 @@
 .game-detail-secondary { border: 2px solid #fff; color: #fff; }
 .game-detail-secondary:hover { background: #fff; color: var(--dark-color); }
 .game-detail-overview { padding-top: 90px; padding-bottom: 90px; }
+.game-detail-overview > .row { margin-left: calc(-.5 * var(--bs-gutter-x)); margin-right: calc(-.5 * var(--bs-gutter-x)); }
 .game-detail-overview h1 { font-size: clamp(38px, 5vw, 62px); margin-bottom: 24px; }
 .game-detail-overview h2, .game-detail-gallery h2 { margin: 42px 0 24px; }
 .game-detail-lead { font-size: 18px; line-height: 1.8; }
@@ -25,7 +26,7 @@
 .game-detail-facts dt { font-weight: 700; }
 .game-detail-gallery { background: #231f20; color: #fff; padding: 70px 0 90px; }
 .game-detail-gallery h2 { color: #fff; margin-top: 0; }
-.game-detail-gallery img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; }
+
 @media (max-width: 767px) {
   .game-detail-hero { min-height: 520px; }
   .game-detail-hero::after { background: rgba(20, 15, 15, .68); }

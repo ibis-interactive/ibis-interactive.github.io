@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 import gamesData from '../../assets/data/games.json'
 import type { Game, Language } from '../../types/content'
 import AppIcon from '../AppIcon'
+import GameCard from '../games/GameCard'
 
 export default function Portfolio() {
   const { t, i18n } = useTranslation()
@@ -12,10 +14,11 @@ export default function Portfolio() {
   const games = gamesData.games as Game[]
   return <section id="portfolio"><div className="container">
     <div className="row"><h2 className="col-12 centered">{t('portfolio.title')}</h2><hr /><div className="col-12 centered"><p className="large">{t('portfolio.text')}</p></div></div>
-    <div className="row justify-content-center">{games.map((game) => <div className="col-12 col-md-6 col-lg-4 mb-4" key={game.modalId}><div className="grid"><button type="button" className="portfolio-card portfolio-card-trigger" data-bs-toggle="modal" data-bs-target="#gameModal" onClick={() => setSelected(game)}>
-      <img className="img-responsive" src={portfolioImagesPath + game.imgSrc} alt={game.altText} />
-      <span className="btn btn-default">{game.title}</span>
-    </button></div></div>)}</div>
+    <div className="row justify-content-center">{games.map((game) => <div className="col-12 col-md-6 col-lg-4 mb-4" key={game.modalId}><div className="grid">
+      {game.detailPage && game.slug
+        ? <Link className="portfolio-card portfolio-card-trigger" to={`/juegos/${game.slug}`}><GameCard game={game} /></Link>
+        : <button type="button" className="portfolio-card portfolio-card-trigger" data-bs-toggle="modal" data-bs-target="#gameModal" onClick={() => setSelected(game)}><GameCard game={game} /></button>}
+    </div></div>)}</div>
   </div>
   <div className="modal fade" id="gameModal" tabIndex={-1} aria-hidden="true"><div className="modal-dialog"><div className="modal-content">
     <div className="modal-header"><h4 className="modal-title">{selected?.title}</h4><button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label={t('common.close')} /></div>

@@ -7,22 +7,14 @@
   "portfolio": { "title": "Our Games", "text": "A small selection of our games" },
   "team": { "title": "Our Team", "favorites": "Favorite games", "member": "Team member" },
   "mainGame": { "title": "Don Pepe y sus globos", "description": "Don Pepe hosts the hottest game show on air, where contestants from around the world clash in intense water balloon fights.<br/>What started as a simple plan to scam children has become a legitimate sport, and there can only be one winner. Do you have what it takes?", "details": "Discover the game" },
-  "donPepe": {
-    "title": "Don Pepe y sus globos",
-    "summary": "Become a water balloon champion in a projectile arena fighter for up to four players.",
-    "description": "Don Pepe hosts the hottest game show on television. Contestants from around the world face off in intense water balloon battles to become the sole winner.",
-    "actions": { "steam": "View on Steam", "presskit": "Open press kit" },
-    "features": { "title": "Enter the competition", "items": ["Fight alone or with up to four players, locally or online.", "Choose characters, stages and rules in Battle Mode.", "Beat your high score in Arcade Mode and become the champion.", "Discover Don Pepe's story in Story Mode.", "Set up your own competition in Tournament Mode.", "Throw, run, roll and use items to gain an advantage in every match."] },
-    "facts": { "title": "Game facts", "developer": "Developer", "release": "Release", "players": "Players", "playersValue": "1 to 4, local and online", "platform": "Platform", "languages": "Languages", "languagesValue": "Spanish and English" },
-    "gallery": "Gallery", "screenshotAlt": "Don Pepe y sus globos screenshot {{number}}"
-  },
+  "gamePage": { "openImage": "Enlarge screenshot {{number}}", "enlarge": "View larger", "chooseImage": "Choose screenshot", "features": "Enter the competition", "facts": { "title": "Game facts", "release": "Release", "players": "Players", "platform": "Platform", "languages": "Languages" }, "gallery": "Gallery", "screenshotAlt": "{{title}} screenshot {{number}}" },
   "carousel": { "previous": "Previous", "next": "Next" },
   "common": { "close": "Close" },
   "privacy": {
     "title": "Privacy and Personal Data Policy",
     "intro": "At <strong>Ibis Interactive</strong>, we respect and protect our players' privacy. We handle data responsibly, securely, and transparently.",
     "collection": { "title": "Information collection", "text": "Our games <strong>do not collect personally identifiable information</strong>. We only collect anonymous activity data:", "items": ["Game session duration", "User events such as clicks, button presses, or completed levels", "Non-identifiable technical information such as operating system or screen resolution"] },
-    "use": { "title": "Use and processing of data", "text": "Data is anonymized and used internally. <strong>We do not sell, share, or transfer data to third parties</strong>.", "items": ["Optimize the user experience", "Detect errors or performance issues", "Improve our products and features"] },
+    "use": { "title": "Use and processing of data", "text": "Data is anonymized and used internally. <strong>We do not sell, share, or transfer data to third parties</strong>.<br/>Data is used for:", "items": ["Optimize the user experience", "Detect errors or performance issues", "Improve our products and features"] },
     "security": { "title": "Security and confidentiality", "text": "We apply technical and organizational measures to protect information from unauthorized access, loss, or manipulation. Access is restricted to authorized personnel.", "items": [] },
     "rights": { "title": "User rights", "text": "You may ask what information is collected or request the deletion of anonymous data by contacting us at:", "items": [] },
     "changes": { "title": "Changes to this policy", "text": "We may update this policy. Changes will be communicated within the game or through our official channels.", "items": [] }

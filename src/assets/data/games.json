@@ -1,7 +1,9 @@
 {
     "games": [
         {
-            "title": "Don Pepe y sus globos (DEMO)",
+            "slug": "don-pepe-y-sus-globos",
+            "detailPage": true,
+            "title": "Don Pepe y sus globos",
             "imgSrc": "don-pepe.png",
             "altText": "portfolio don pepe y sus globos",
             "modalId": "donpepe",
@@ -13,6 +15,30 @@
             "playOn": {
                 "en": "Wishlist on",
                 "es": "Agregar a la lista de deseos de"
+            },
+            "summary": {
+                "en": "Become a water balloon champion in a projectile arena fighter for up to four players.",
+                "es": "Conviértete en campeón de las bombitas de agua en un arena fighter de proyectiles para hasta cuatro jugadores."
+            },
+            "features": {
+                "en": ["Fight alone or with up to four players, locally or online.", "Choose characters, stages and rules in Battle Mode.", "Beat your high score in Arcade Mode and become the champion.", "Discover Don Pepe's story in Story Mode.", "Set up your own competition in Tournament Mode.", "Throw, run, roll and use items to gain an advantage in every match."],
+                "es": ["Combate en solitario o con hasta cuatro jugadores, de forma local o en línea.", "Escoge personajes, escenarios y reglas en el Modo Batalla.", "Supera tu mejor puntuación en el Modo Arcade y conviértete en campeón.", "Descubre la historia de Don Pepe en el Modo Historia.", "Organiza tu propia competencia en el Modo Torneo.", "Lanza, corre, rueda y utiliza objetos para obtener ventaja en cada enfrentamiento."]
+            },
+            "detailImages": {
+                "folder": "don-pepe-y-sus-globos",
+                "hero": "pepe_header.jpg",
+                "logo": "library_logo.png",
+                "gallery": ["gameplay_01.jpg", "gameplay_02.jpg", "gameplay_03.jpg", "cover_horizontal.jpg"]
+            },
+            "detailLinks": [
+                { "url": "https://store.steampowered.com/app/4079810/Don_Pepe_y_sus_globos/", "primary": true, "label": { "en": "View on Steam", "es": "Ver en Steam" } },
+                { "url": "https://press.ibisinteractive.cl/sheet.php?p=don_pepe_y_sus_globos", "label": { "en": "Open press kit", "es": "Abrir press kit" } }
+            ],
+            "facts": {
+                "release": { "en": "Q4-2026", "es": "Q4-2026" },
+                "players": { "en": "1 to 4, local and online", "es": "1 a 4, local y en línea" },
+                "platform": "Windows",
+                "languages": { "en": "Spanish and English", "es": "Español e inglés" }
             }
         },
         {
