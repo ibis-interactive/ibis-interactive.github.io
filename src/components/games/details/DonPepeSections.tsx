@@ -2,6 +2,7 @@ import { useRef, useState } from 'react'
 import type { CSSProperties, KeyboardEvent } from 'react'
 import { donPepeCharacters } from '../../../assets/data/don-pepe-characters'
 import type { DonPepeCharacter } from '../../../assets/data/don-pepe-characters'
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa6'
 
 const labels = {
   es: { title: 'Personajes', previous: 'Anterior', next: 'Siguiente', power: 'Ataque', defense: 'Defensa', agility: 'Agilidad', maxCurve: 'Curva Máxima', stamina: 'Resistencia' },
@@ -51,16 +52,17 @@ export default function DonPepeSections({ language }: DonPepeSectionsProps) {
       <h2 id="don-pepe-roster-title">{text.title}</h2>
       <CharacterDetail character={selected} labels={text} />
       <div className="don-pepe-roster-navigation">
-        <button type="button" onClick={() => selectCharacter(selectedIndex - 1)}>{text.previous}</button>
+        <button type="button" onClick={() => selectCharacter(selectedIndex - 1)}><FaChevronLeft/> {text.previous}</button>
         <span role="status" aria-live="polite" aria-atomic="true">
           <span className="visually-hidden">{selected.name}: </span>
           {selectedIndex + 1} / {donPepeCharacters.length}
         </span>
-        <button type="button" onClick={() => selectCharacter(selectedIndex + 1)}>{text.next}</button>
+        <button type="button" onClick={() => selectCharacter(selectedIndex + 1)}>{text.next} <FaChevronRight/></button>
       </div>
       <div className="don-pepe-character-grid" aria-label={text.title} onKeyDown={handleRosterKeyDown} ref={rosterRef}>
         {donPepeCharacters.map((character, index) => <button
           className="don-pepe-character-card"
+          data-pattern={character.pattern}
           type="button"
           aria-pressed={selected.id === character.id}
           aria-controls="don-pepe-character-detail"
@@ -82,7 +84,7 @@ function CharacterPortrait({ character }: { character: DonPepeCharacter }) {
 }
 
 function CharacterDetail({ character, labels: text }: { character: DonPepeCharacter; labels: typeof labels.es }) {
-  return <article id="don-pepe-character-detail" className="don-pepe-character-detail" aria-labelledby="don-pepe-character-name" style={{ '--character-color': character.color } as CSSProperties}>
+  return <article id="don-pepe-character-detail" className="don-pepe-character-detail" data-pattern={character.pattern} aria-labelledby="don-pepe-character-name" style={{ '--character-color': character.color } as CSSProperties}>
     <div className="don-pepe-character-art"><CharacterPortrait character={character} /></div>
     <div className="don-pepe-character-info">
       <h3 id="don-pepe-character-name">{character.name}</h3>

@@ -1,0 +1,110 @@
+/* Flat repeating shapes; the accent follows the card background in every state. */
+:is(.don-pepe-character-card, .don-pepe-character-detail) {
+  position: relative;
+  isolation: isolate;
+  --pattern-accent: color-mix(in srgb, var(--card-background) 90%, #481917);
+}
+:is(.don-pepe-character-card, .don-pepe-character-detail)::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--pattern-accent);
+  -webkit-mask-image: var(--pattern-image);
+  mask-image: var(--pattern-image);
+  -webkit-mask-size: var(--pattern-size);
+  mask-size: var(--pattern-size);
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+}
+.don-pepe-character-card > span:last-child { background-color: var(--card-background); }
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='honeycomb'] {
+  --pattern-size: calc(36px * var(--pattern-scale, 1)) calc(20.784px * var(--pattern-scale, 1));
+  --pattern-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2036%2020.784%22%3E%3Cpath%20d%3D%22M6%2010.392%2012%200H24L30%2010.392%2024%2020.784H12ZM0%2010.392H6M30%2010.392H36%22%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%221.2%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E");
+}
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='paper-dotted'] {
+  --pattern-size: calc(12px * var(--pattern-scale, 1)) calc(12px * var(--pattern-scale, 1));
+  --pattern-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2012%2012%22%3E%3Ccircle%20cx%3D%223%22%20cy%3D%223%22%20r%3D%221%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E");
+}
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='stars'] {
+  --pattern-size: calc(28px * var(--pattern-scale, 1)) calc(28px * var(--pattern-scale, 1));
+  --pattern-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2028%2028%22%3E%3Cg%20fill%3D%22white%22%3E%3Cpolygon%20points%3D%220.000%2C-4.000%200.689%2C-1.663%202.828%2C-2.828%201.663%2C-0.689%204.000%2C0.000%201.663%2C0.689%202.828%2C2.828%200.689%2C1.663%200.000%2C4.000%20-0.689%2C1.663%20-2.828%2C2.828%20-1.663%2C0.689%20-4.000%2C0.000%20-1.663%2C-0.689%20-2.828%2C-2.828%20-0.689%2C-1.663%22%20transform%3D%22translate(7%207)%22%2F%3E%3Cpolygon%20points%3D%220.000%2C-4.000%200.689%2C-1.663%202.828%2C-2.828%201.663%2C-0.689%204.000%2C0.000%201.663%2C0.689%202.828%2C2.828%200.689%2C1.663%200.000%2C4.000%20-0.689%2C1.663%20-2.828%2C2.828%20-1.663%2C0.689%20-4.000%2C0.000%20-1.663%2C-0.689%20-2.828%2C-2.828%20-0.689%2C-1.663%22%20transform%3D%22translate(21%2021)%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='grid'] {
+  --pattern-size: calc(20px * var(--pattern-scale, 1)) calc(20px * var(--pattern-scale, 1));
+  --pattern-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20d%3D%22M0%200H20M0%200V20%22%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E");
+}
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='stripes'] {
+  --pattern-size: calc(20px * var(--pattern-scale, 1)) calc(20px * var(--pattern-scale, 1));
+  --pattern-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20d%3D%22M-5%205%205-5M0%2020%2020%200M15%2025%2025%2015%22%20stroke%3D%22white%22%20stroke-width%3D%223%22%2F%3E%3C%2Fsvg%3E");
+}
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='dots'] {
+  --pattern-size: calc(18px * var(--pattern-scale, 1)) calc(18px * var(--pattern-scale, 1));
+  --pattern-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018%2018%22%3E%3Ccircle%20cx%3D%229%22%20cy%3D%229%22%20r%3D%222%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E");
+}
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='cross'] {
+  --pattern-size: calc(24px * var(--pattern-scale, 1)) calc(24px * var(--pattern-scale, 1));
+  --pattern-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M7%2012h10M12%207v10%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E");
+}
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='waves'] {
+  --pattern-size: calc(35.584px * var(--pattern-scale, 1)) calc(30.585px * var(--pattern-scale, 1));
+  --pattern-image: url('./assets/patterns/waves.svg');
+}
+
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='clouds'] {
+  --pattern-size: calc(56px * var(--pattern-scale, 1)) calc(40px * var(--pattern-scale, 1));
+  --pattern-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2056%2040%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%221.3%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M5%2015C2%2015%202%2010%205%2010C4%205%2011%203%2013%207C17%205%2020%208%2019%2010C24%2010%2024%2015%2020%2015Z%22%2F%3E%3Cpath%20d%3D%22M5%2015C2%2015%202%2010%205%2010C4%205%2011%203%2013%207C17%205%2020%208%2019%2010C24%2010%2024%2015%2020%2015Z%22%20transform%3D%22translate(28%2020)%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='rhombus'] {
+  --pattern-size: calc(64px * var(--pattern-scale, 1)) calc(64px * var(--pattern-scale, 1));
+  --pattern-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-linecap%3D%22square%22%20d%3D%22M32-10%2042%200%2032%2010%2022%200zM0-10%2010%200%200%2010-10%200zm0%2032%2010%2010L0%2042l-10-10zm32%200%2010%2010-10%2010-10-10zM16-10%2026%200%2016%2010%206%200zm0%2032%2010%2010-10%2010L6%2032zM32%206l10%2010-10%2010-10-10zM0%206l10%2010L0%2026l-10-10zm16%200%2010%2010-10%2010L6%2016z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='hex-links'] {
+  overflow: hidden;
+  --pattern-size: calc(34.65px * var(--pattern-scale, 1)) calc(23.4px * var(--pattern-scale, 1));
+  --pattern-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2069.3%2046.8%22%3E%3Cpath%20fill%3D%22white%22%20d%3D%22m46.08-12.52-5.68%209.8H12.6L7.77%200-4.1%2020.63H-22v5.5h17.9L7.77%2046.8l4.83%202.72h27.8l5.68%209.8%2014.41.05%207.24-12.52-7.24-12.52-13.19-.05h-1.22l-5.68%209.8H12.6L.68%2023.4%2012.6%202.72h27.8l5.68%209.8h1.15l.06.1%2013.2-.05L67.73.05%2060.5-12.47ZM77.03.05%2065.16%2020.68H47.3v-.06h-5.9L34.14%207.97h-6.4l8.9%2015.43-8.9%2014.87h6.4l7.25-12.15h5.87v.06h17.9l11.87%2020.67%204.83-2.72-11.92-20.68L81.86%202.77Z%22%2F%3E%3C%2Fsvg%3E");
+}
+/* Rotate the repeated surface, not each tile, to keep the joins continuous. */
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='hex-links']::before {
+  inset: -100%;
+  border-radius: 0;
+  transform: rotate(35deg);
+}
+
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='ring-links'] {
+  overflow: hidden;
+  --pattern-size: calc(150px * var(--pattern-scale, 1)) calc(150px * var(--pattern-scale, 1));
+  --pattern-image: url('./assets/patterns/ring-links.svg');
+}
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='ring-links']::before {
+  inset: -100%;
+  border-radius: 0;
+  transform: rotate(10deg);
+}
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='basket-weave'] {
+  --pattern-size: calc(80px * var(--pattern-scale, 1)) calc(80px * var(--pattern-scale, 1));
+  --pattern-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2060%2060%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22white%22%20d%3D%22M10%2060V30m10%200v30m10%200H0V30M50%200v30m-10%200V0M30%200h30v30M30%2040h30m0%2010H30m0-20h30v30H30zM0%2010h30m0%2010H0M0%200h30v30H0z%22%2F%3E%3C%2Fsvg%3E");
+}
+
+
+.don-pepe-character-detail { --card-background: #f7ece3; --pattern-scale: 2.5; }
+@media (max-width: 767px) {
+  .don-pepe-character-detail { --pattern-scale: 1.75; }
+}

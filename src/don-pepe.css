@@ -1,3 +1,4 @@
+@import './don-pepe-patterns.css';
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
 
 .don-pepe-roster { padding: 80px 0; color: var(--dark-color); background: #fff; }
@@ -34,9 +35,9 @@
 .don-pepe-roster-navigation button:hover { background: #f7ece3; }
 .don-pepe-roster-navigation > span { min-width: 54px; font-size: 14px; text-align: center; }
 .don-pepe-character-grid { position: relative; display: flex; gap: 12px; padding: 6px 4px 16px; overflow-x: auto; overscroll-behavior-inline: contain; scroll-snap-type: inline mandatory; }
-.don-pepe-character-card { flex: 0 0 130px; min-width: 0; padding: 0; border: 1px solid #e5d6ce; border-radius: 12px; color: var(--dark-color); background: #fff; text-align: left; overflow: hidden; cursor: pointer; scroll-snap-align: center; }
-.don-pepe-character-card[aria-pressed='true'] { border-color: var(--main-color); background: #f7ece3; }
-.don-pepe-character-card:hover { background: #f7ece3; }
+.don-pepe-character-card { --card-background: #fff; flex: 0 0 130px; min-width: 0; padding: 0; border: 1px solid #e5d6ce; border-radius: 12px; color: var(--dark-color); background: var(--card-background); text-align: left; overflow: hidden; cursor: pointer; scroll-snap-align: center; }
+.don-pepe-character-card[aria-pressed='true'] { --card-background: #f7ece3; border-color: var(--main-color); }
+.don-pepe-character-card:hover { --card-background: #f7ece3; }
 .don-pepe-character-card img, .don-pepe-character-card .don-pepe-character-placeholder { display: block; width: 100%; height: 110px; padding: 8px; object-fit: contain; }
 .don-pepe-character-card .don-pepe-character-placeholder { display: grid; place-items: center; }
 .don-pepe-character-card > span:last-child { display: block; padding: 10px 12px; font-size: 14px; font-weight: 700; }
@@ -44,13 +45,32 @@
 
 @media (max-width: 767px) {
   .don-pepe-roster { padding: 50px 0; }
-  .don-pepe-character-detail { grid-template-columns: minmax(0, 1fr); gap: 20px; padding: 24px; }
-  .don-pepe-character-art { height: 310px; }
-  .don-pepe-character-detail h3 { font-size: 28px; }
+  .don-pepe-character-detail {
+    position: relative;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: repeat(2, minmax(min-content, 1fr));
+    min-height: clamp(500px, 120vw, 660px);
+    gap: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .don-pepe-character-art { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .don-pepe-character-art img { object-position: center top; }
+  .don-pepe-character-info {
+    position: relative;
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: stretch;
+    padding: 20px;
+    background: rgba(247, 236, 227, .85);
+  }
+
+  .don-pepe-character-detail h3 { margin-bottom: 16px; font-size: 28px; }
   .don-pepe-roster-navigation { justify-content: space-between; }
   .don-pepe-character-card { flex-basis: 110px; }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .don-pepe-character-detail { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 20px; padding: 24px; }
 }
