@@ -1,7 +1,9 @@
-import { Navigate, useParams } from 'react-router-dom'
+import { Link, Navigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import gamesData from '../assets/data/games.json'
+import { getChangelogs } from '../data/changelogs'
 import Layout from '../components/Layout'
+import '../game-detail.css'
 import GameSpecificSections from '../components/games/details/GameSpecificSections'
 import GameGallery from '../components/games/details/GameGallery'
 import type { Game, Language } from '../types/content'
@@ -19,7 +21,7 @@ export default function GamePage() {
   const imagePath = `${import.meta.env.BASE_URL}images/games/${game.detailImages.folder}/`
   return <Layout><main className="game-detail">
     <section className="game-detail-hero">
-      <img className="game-detail-hero-background" src={`${imagePath}${game.detailImages.hero}`} alt="" />
+      <img className="game-detail-hero-background" fetchPriority="high" src={`${imagePath}${game.detailImages.hero}`} alt="" />
       <div className="container game-detail-hero-content">
         <img className="game-detail-logo" src={`${imagePath}${game.detailImages.logo}`} alt={game.title} />
         <p>{game.summary[language]}</p>
@@ -29,7 +31,9 @@ export default function GamePage() {
           target="_blank"
           rel="noreferrer"
           key={link.url}
-        >{link.label[language]}</a>)}</div>
+        >{link.label[language]}</a>)}
+          {getChangelogs(game.slug || game.modalId).length > 0 && <Link className="btn game-detail-secondary" to={`/juegos/${game.slug}/changelogs`}>{t('changelogs.button')}</Link>}
+        </div>
       </div>
     </section>
 

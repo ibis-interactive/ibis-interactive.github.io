@@ -1,7 +1,9 @@
+import 'bootstrap/js/dist/modal'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import gamesData from '../../assets/data/games.json'
+import { getChangelogs } from '../../data/changelogs'
 import type { Game, Language } from '../../types/content'
 import AppIcon from '../AppIcon'
 import GameCard from '../games/GameCard'
@@ -24,6 +26,7 @@ export default function Portfolio() {
     <div className="modal-header"><h4 className="modal-title">{selected?.title}</h4><button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label={t('common.close')} /></div>
     {selected && <div className="modal-body centered"><p><img className="img-responsive portfolio-card" src={portfolioImagesPath + selected.imgSrc} alt={selected.altText} /></p><p className="modal-text" dangerouslySetInnerHTML={{ __html: selected.description[language] }} />
       {selected.link.map((link) => <a href={link.url} className="btn btn-stores my-1 me-1" key={link.url}><AppIcon name={link.icon} /> {selected.playOn[language]} {link.store}</a>)}
+      {getChangelogs(selected.slug || selected.modalId).length > 0 && <a className="btn btn-stores my-1 me-1" href={`${import.meta.env.BASE_URL}juegos/${selected.slug || selected.modalId}/changelogs`}>{t('changelogs.button')}</a>}
     </div>}
   </div></div></div>
   </section>

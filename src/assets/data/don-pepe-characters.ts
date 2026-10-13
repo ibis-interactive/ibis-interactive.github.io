@@ -1,4 +1,4 @@
-export type DonPepeCharacterPattern = 'dots' | 'diagonal' | 'grid' | 'waves' | 'honeycomb' | 'cross' | 'rhombus' | 'polka' | 'stars' | 'paper-dotted' | 'stripes' | 'clouds' | 'hex-links' | 'ring-links' | 'basket-weave'
+export type DonPepeCharacterPattern = 'dots' | 'diagonal' | 'grid' | 'waves' | 'honeycomb' | 'cross' | 'rhombus' | 'polka' | 'stars' | 'paper-dotted' | 'stripes' | 'clouds' | 'hex-links' | 'ring-links' | 'basket-weave' | 'floral' | 'curved-tiles' | 'ornamental'
 
 export interface DonPepeCharacter {
   id: string
@@ -25,4 +25,7 @@ export const donPepeCharacters: DonPepeCharacter[] = [
   { id: 'clemente', name: 'Clemente', image: '/images/games/don-pepe-y-sus-globos/characters/clemente.png', color: '#404694', pattern: 'cross', stats: { power: 1, defense: 0.55, agility: 0.4, maxCurve: 0.0, stamina: 0.45 } },
   { id: 'ivan', name: 'Ivan', image: '/images/games/don-pepe-y-sus-globos/characters/ivan.png', color: '#f38354', pattern: 'rhombus', stats: { power: 0.55, defense: 0.5, agility: 0.65, maxCurve: 0.8, stamina: 0.65 } },
   { id: 'laura', name: 'Laura', image: '/images/games/don-pepe-y-sus-globos/characters/laura.png', color: '#87ff68', pattern: 'ring-links', stats: { power: 0.3, defense: 0.75, agility: 0.8, maxCurve: 0.3, stamina: 0.75 } },
+  { id: 'tito', name: 'Tito', image: '/images/games/don-pepe-y-sus-globos/characters/tito.png', color: '#ed868e', pattern: 'ornamental', stats: { power: 0.4, defense: 0.5, agility: 0.65, maxCurve: 0.9, stamina: 0.3 } },
+  // { id: 'cacty', name: 'Cacty', image: '/images/games/don-pepe-y-sus-globos/characters/cacty.png', color: '#dae1f1', pattern: 'floral', stats: { power: 0.3, defense: 0.75, agility: 0.8, maxCurve: 0.3, stamina: 0.75 } },
+  // { id: 'humichan', name: 'Humi-chan', image: '/images/games/don-pepe-y-sus-globos/characters/humichan.png', color: '#e98168', pattern: 'curved-tiles', stats: { power: 0.3, defense: 0.75, agility: 0.8, maxCurve: 0.3, stamina: 0.75 } },
 ]

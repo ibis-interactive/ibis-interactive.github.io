@@ -52,8 +52,8 @@
 }
 
 :is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='cross'] {
-  --pattern-size: calc(24px * var(--pattern-scale, 1)) calc(24px * var(--pattern-scale, 1));
-  --pattern-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M7%2012h10M12%207v10%22%20stroke%3D%22white%22%20stroke-width%3D%222%22%2F%3E%3C%2Fsvg%3E");
+  --pattern-size: calc(36px * var(--pattern-scale, 1)) calc(36px * var(--pattern-scale, 1));
+  --pattern-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22white%22%20stroke-width%3D%221%22%20stroke-linecap%3D%22square%22%3E%3Cpath%20d%3D%22M37.657%2010.343l-4.243%204.243m-2.828%202.828l-4.243%204.243m11.314%200l-4.243-4.243m-2.828-2.828l-4.243-4.243m-20.686%200l-4.243%204.243m-2.828%202.828l-4.243%204.243m11.314%200l-4.243-4.243m-2.828-2.828l-4.243-4.243%22%2F%3E%3Cpath%20d%3D%22M16-8v6m0%204v6m8-8h-6m-4%200H8m8%2024v6m0%204v6m8-8h-6m-4%200H8%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
 }
 
 :is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='waves'] {
@@ -103,6 +103,21 @@
   --pattern-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2060%2060%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22white%22%20d%3D%22M10%2060V30m10%200v30m10%200H0V30M50%200v30m-10%200V0M30%200h30v30M30%2040h30m0%2010H30m0-20h30v30H30zM0%2010h30m0%2010H0M0%200h30v30H0z%22%2F%3E%3C%2Fsvg%3E");
 }
 
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='floral'] {
+  --pattern-size: calc(45px * var(--pattern-scale, 1)) calc(60px * var(--pattern-scale, 1));
+  --pattern-image: url('./assets/patterns/floral.svg');
+}
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='curved-tiles'] {
+  --pattern-size: calc(40px * var(--pattern-scale, 1)) calc(40px * var(--pattern-scale, 1));
+  --pattern-image: url('./assets/patterns/curved-tiles.svg');
+}
+
+:is(.don-pepe-character-card, .don-pepe-character-detail)[data-pattern='ornamental'] {
+  --pattern-size: calc(96px * var(--pattern-scale, 1)) calc(96px * var(--pattern-scale, 1));
+  --pattern-image: url('./assets/patterns/ornamental.svg');
+}
 
 .don-pepe-character-detail { --card-background: #f7ece3; --pattern-scale: 2.5; }
 @media (max-width: 767px) {

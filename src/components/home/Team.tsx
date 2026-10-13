@@ -10,7 +10,7 @@ export default function Team() {
   return <section id="team"><div className="container"><div className="row centered">
     <h2 className="col-12 centered">{t('team.title')}</h2><hr />
     <div className="row justify-content-center">{members.map((member) => <article className="col-lg-4 centered pad" key={member.name}>
-      <img className="img img-circle" src={`./images/team/${member.img}`} height="120" width="120" alt={`${t('team.member')} ${member.name}`} />
+      <img loading="lazy" decoding="async" className="img img-circle" src={`./images/team/${member.img}`} height="120" width="120" alt={`${t('team.member')} ${member.name}`} />
       <h4><strong>{member.name}</strong></h4>
       <h6>{member.roles.map((role, index) => <span key={role.name.en}>{index > 0 && ' - '}{role.name[language]} <AppIcon name={role.icon} /></span>)}</h6>
       <p>{member.description[language]}<br /><strong>{t('team.favorites')}:</strong> {member.favorites[language]}</p>

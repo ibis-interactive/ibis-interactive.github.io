@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react'
+import '../../../don-pepe.css'
 import type { CSSProperties, KeyboardEvent } from 'react'
 import { donPepeCharacters } from '../../../assets/data/don-pepe-characters'
 import type { DonPepeCharacter } from '../../../assets/data/don-pepe-characters'
@@ -79,7 +80,7 @@ export default function DonPepeSections({ language }: DonPepeSectionsProps) {
 
 function CharacterPortrait({ character }: { character: DonPepeCharacter }) {
   return character.image
-    ? <img src={character.image} alt="" />
+    ? <img loading="lazy" decoding="async" src={character.image} alt="" />
     : <span className="don-pepe-character-placeholder" aria-hidden="true">{character.name.slice(0, 2)}</span>
 }
 

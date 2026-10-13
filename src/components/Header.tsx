@@ -1,3 +1,5 @@
+import 'bootstrap/js/dist/collapse'
+import 'bootstrap/js/dist/dropdown'
 import { useTranslation } from 'react-i18next'
 import AppIcon from './AppIcon'
 

@@ -1,4 +1,5 @@
 {
+  "changelogs": {"button": "Changelogs", "title": "Changelogs de {{game}}", "version": "Versión {{version}}", "empty": "Todavía no hay changelogs publicados.", "back": "Volver al juego", "news": "Novedades", "improvements": "Mejoras", "fixes": "Correcciones"},
   "brand": { "name": "Ibis Interactive", "homeLabel": "Ir al inicio de Ibis Interactive" },
   "nav": { "home": "Inicio", "about": "Nosotros", "portfolio": "Juegos", "team": "Equipo", "open": "Abrir navegación" },
   "footer": { "presskit": "Presskit", "privacy": "Política de privacidad", "contact": "Contáctanos y síguenos en:" },

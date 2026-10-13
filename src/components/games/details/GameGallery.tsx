@@ -2,7 +2,7 @@ import { useEffect, useId, useRef, useState } from 'react'
 import type { KeyboardEvent } from 'react'
 import { useTranslation } from 'react-i18next'
 import './GameGallery.css'
-import { Carousel } from 'bootstrap'
+import Carousel from 'bootstrap/js/dist/carousel'
 import { FaChevronLeft, FaChevronRight, FaExpand, FaCompress } from 'react-icons/fa6'
 
 interface GameGalleryProps {
