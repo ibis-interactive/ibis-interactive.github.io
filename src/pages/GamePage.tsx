@@ -1,3 +1,4 @@
+import { imageSrcSet } from '../data/responsive-images'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import gamesData from '../assets/data/games.json'
@@ -21,9 +22,9 @@ export default function GamePage() {
   const imagePath = `${import.meta.env.BASE_URL}images/games/${game.detailImages.folder}/`
   return <Layout><main className="game-detail">
     <section className="game-detail-hero">
-      <img className="game-detail-hero-background" fetchPriority="high" src={`${imagePath}${game.detailImages.hero}`} alt="" />
+      <img className="game-detail-hero-background" fetchpriority="high" srcSet={imageSrcSet(`images/games/${game.detailImages.folder}/${game.detailImages.hero}`)} sizes="100vw" src={`${imagePath}${game.detailImages.hero}`} alt="" />
       <div className="container game-detail-hero-content">
-        <img className="game-detail-logo" src={`${imagePath}${game.detailImages.logo}`} alt={game.title} />
+        <img className="game-detail-logo" srcSet={imageSrcSet(`images/games/${game.detailImages.folder}/${game.detailImages.logo}`)} sizes="(max-width: 768px) 80vw, 520px" src={`${imagePath}${game.detailImages.logo}`} alt={game.title} />
         <p>{game.summary[language]}</p>
         <div className="game-detail-actions">{game.detailLinks.map((link) => <a
           className={`btn ${link.primary ? 'game-detail-primary' : 'game-detail-secondary'}`}

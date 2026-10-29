@@ -1,9 +1,10 @@
+import { imageSrcSet } from '../../data/responsive-images'
 import { useEffect, useRef } from 'react'
 import Carousel from 'bootstrap/js/dist/carousel'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
-const slides = ['cover_horizontal.jpg', 'gameplay_01.jpg', 'gameplay_02.jpg', 'library_hero.jpg']
+const slides = ['cover_horizontal.webp', 'gameplay_01.webp', 'gameplay_02.webp', 'library_hero.webp']
 
 export default function MainGame() {
   const { t } = useTranslation()
@@ -27,7 +28,7 @@ export default function MainGame() {
     </div>
     <div id="mainGameCarousel" className="col-12 col-lg-6 align-items-center d-flex px-0">
       <div ref={carouselRef} id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
-        <div className="carousel-inner">{slides.map((slide, index) => <div className={`carousel-item${index === 0 ? ' active' : ''}`} key={slide}><img loading={index === 0 ? 'eager' : 'lazy'} fetchPriority={index === 0 ? 'high' : 'auto'} decoding="async" src={`./images/main-game/${slide}`} className="d-block w-100" alt="" /></div>)}</div>
+        <div className="carousel-inner">{slides.map((slide, index) => <div className={`carousel-item${index === 0 ? ' active' : ''}`} key={slide}><img loading={index === 0 ? 'eager' : 'lazy'} fetchpriority={index === 0 ? 'high' : 'auto'} decoding="async" srcSet={imageSrcSet(`images/main-game/${slide}`)} sizes="(min-width: 992px) 50vw, 100vw" src={`./images/main-game/${slide}`} className="d-block w-100" alt="" /></div>)}</div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"><span className="carousel-control-prev-icon" /><span className="visually-hidden">{t('carousel.previous')}</span></button>
         <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next"><span className="carousel-control-next-icon" /><span className="visually-hidden">{t('carousel.next')}</span></button>
       </div>

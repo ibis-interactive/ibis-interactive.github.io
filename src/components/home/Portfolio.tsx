@@ -1,3 +1,4 @@
+import { imageSrcSet } from '../../data/responsive-images'
 import 'bootstrap/js/dist/modal'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -24,7 +25,7 @@ export default function Portfolio() {
   </div>
   <div className="modal fade" id="gameModal" tabIndex={-1} aria-hidden="true"><div className="modal-dialog"><div className="modal-content">
     <div className="modal-header"><h4 className="modal-title">{selected?.title}</h4><button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label={t('common.close')} /></div>
-    {selected && <div className="modal-body centered"><p><img className="img-responsive portfolio-card" src={portfolioImagesPath + selected.imgSrc} alt={selected.altText} /></p><p className="modal-text" dangerouslySetInnerHTML={{ __html: selected.description[language] }} />
+    {selected && <div className="modal-body centered"><p><img className="img-responsive portfolio-card" srcSet={imageSrcSet(`images/portfolio/${selected.imgSrc}`)} sizes="(min-width: 576px) 450px, 90vw" src={portfolioImagesPath + selected.imgSrc} alt={selected.altText} /></p><p className="modal-text" dangerouslySetInnerHTML={{ __html: selected.description[language] }} />
       {selected.link.map((link) => <a href={link.url} className="btn btn-stores my-1 me-1" key={link.url}><AppIcon name={link.icon} /> {selected.playOn[language]} {link.store}</a>)}
       {getChangelogs(selected.slug || selected.modalId).length > 0 && <a className="btn btn-stores my-1 me-1" href={`${import.meta.env.BASE_URL}juegos/${selected.slug || selected.modalId}/changelogs`}>{t('changelogs.button')}</a>}
     </div>}

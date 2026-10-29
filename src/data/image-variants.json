@@ -1,0 +1,186 @@
+{
+  "images/portfolio/don-pepe.webp": [
+    [
+      "images/portfolio/don-pepe-480.webp",
+      480
+    ],
+    [
+      "images/portfolio/don-pepe.webp",
+      600
+    ]
+  ],
+  "images/games/don-pepe-y-sus-globos/pepe_header.webp": [
+    [
+      "images/games/don-pepe-y-sus-globos/pepe_header-480.webp",
+      480
+    ],
+    [
+      "images/games/don-pepe-y-sus-globos/pepe_header-960.webp",
+      960
+    ],
+    [
+      "images/games/don-pepe-y-sus-globos/pepe_header.webp",
+      1920
+    ]
+  ],
+  "images/games/don-pepe-y-sus-globos/library_logo.webp": [
+    [
+      "images/games/don-pepe-y-sus-globos/library_logo-480.webp",
+      480
+    ],
+    [
+      "images/games/don-pepe-y-sus-globos/library_logo.webp",
+      800
+    ]
+  ],
+  "images/games/don-pepe-y-sus-globos/gameplay_01.webp": [
+    [
+      "images/games/don-pepe-y-sus-globos/gameplay_01-480.webp",
+      480
+    ],
+    [
+      "images/games/don-pepe-y-sus-globos/gameplay_01-960.webp",
+      960
+    ],
+    [
+      "images/games/don-pepe-y-sus-globos/gameplay_01.webp",
+      1920
+    ]
+  ],
+  "images/games/don-pepe-y-sus-globos/gameplay_02.webp": [
+    [
+      "images/games/don-pepe-y-sus-globos/gameplay_02-480.webp",
+      480
+    ],
+    [
+      "images/games/don-pepe-y-sus-globos/gameplay_02-960.webp",
+      960
+    ],
+    [
+      "images/games/don-pepe-y-sus-globos/gameplay_02.webp",
+      1920
+    ]
+  ],
+  "images/games/don-pepe-y-sus-globos/gameplay_03.webp": [
+    [
+      "images/games/don-pepe-y-sus-globos/gameplay_03-480.webp",
+      480
+    ],
+    [
+      "images/games/don-pepe-y-sus-globos/gameplay_03-960.webp",
+      960
+    ],
+    [
+      "images/games/don-pepe-y-sus-globos/gameplay_03.webp",
+      1920
+    ]
+  ],
+  "images/games/don-pepe-y-sus-globos/cover_horizontal.webp": [
+    [
+      "images/games/don-pepe-y-sus-globos/cover_horizontal-480.webp",
+      480
+    ],
+    [
+      "images/games/don-pepe-y-sus-globos/cover_horizontal-960.webp",
+      960
+    ],
+    [
+      "images/games/don-pepe-y-sus-globos/cover_horizontal.webp",
+      1232
+    ]
+  ],
+  "images/portfolio/longamovil.webp": [
+    [
+      "images/portfolio/longamovil-480.webp",
+      480
+    ],
+    [
+      "images/portfolio/longamovil-960.webp",
+      960
+    ],
+    [
+      "images/portfolio/longamovil.webp",
+      1260
+    ]
+  ],
+  "images/portfolio/eco.webp": [
+    [
+      "images/portfolio/eco.webp",
+      315
+    ]
+  ],
+  "images/portfolio/picoteo.webp": [
+    [
+      "images/portfolio/picoteo.webp",
+      315
+    ]
+  ],
+  "images/portfolio/youre-next.webp": [
+    [
+      "images/portfolio/youre-next.webp",
+      315
+    ]
+  ],
+  "images/portfolio/blade.webp": [
+    [
+      "images/portfolio/blade.webp",
+      315
+    ]
+  ],
+  "images/main-game/cover_horizontal.webp": [
+    [
+      "images/main-game/cover_horizontal-480.webp",
+      480
+    ],
+    [
+      "images/main-game/cover_horizontal-960.webp",
+      960
+    ],
+    [
+      "images/main-game/cover_horizontal.webp",
+      1232
+    ]
+  ],
+  "images/main-game/gameplay_01.webp": [
+    [
+      "images/main-game/gameplay_01-480.webp",
+      480
+    ],
+    [
+      "images/main-game/gameplay_01-960.webp",
+      960
+    ],
+    [
+      "images/main-game/gameplay_01.webp",
+      1920
+    ]
+  ],
+  "images/main-game/gameplay_02.webp": [
+    [
+      "images/main-game/gameplay_02-480.webp",
+      480
+    ],
+    [
+      "images/main-game/gameplay_02-960.webp",
+      960
+    ],
+    [
+      "images/main-game/gameplay_02.webp",
+      1920
+    ]
+  ],
+  "images/main-game/library_hero.webp": [
+    [
+      "images/main-game/library_hero-480.webp",
+      480
+    ],
+    [
+      "images/main-game/library_hero-960.webp",
+      960
+    ],
+    [
+      "images/main-game/library_hero.webp",
+      1920
+    ]
+  ]
+}

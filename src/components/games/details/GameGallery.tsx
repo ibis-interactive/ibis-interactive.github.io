@@ -1,3 +1,4 @@
+import { imageSrcSet } from '../../../data/responsive-images'
 import { useEffect, useId, useRef, useState } from 'react'
 import type { KeyboardEvent } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -85,7 +86,7 @@ export default function GameGallery({ images, imagePath, title }: GameGalleryPro
               aria-haspopup="dialog"
               onClick={() => { setActiveIndex(index); setExpanded(true) }}
             >
-              <img src={imagePath + image} alt={t('gamePage.screenshotAlt', { title, number: index + 1 })} loading="lazy" />
+              <img srcSet={imageSrcSet(imagePath + image)} sizes="(min-width: 1400px) 1296px, (min-width: 992px) 936px, 100vw" src={imagePath + image} alt={t('gamePage.screenshotAlt', { title, number: index + 1 })} loading="lazy" />
               <span className="game-gallery-expand" title={t('gamePage.enlarge')} aria-hidden="true"><FaExpand /></span>
             </button>
           </div>)}
@@ -126,7 +127,7 @@ export default function GameGallery({ images, imagePath, title }: GameGalleryPro
             <span>{alt}</span>
             <button className="btn btn-outline-light" type="button" autoFocus onClick={close}>{t('common.close')} <FaCompress /></button>
           </div>
-          <img src={imagePath + images[activeIndex]} alt={alt} />
+          <img srcSet={imageSrcSet(imagePath + images[activeIndex])} sizes="100vw" src={imagePath + images[activeIndex]} alt={alt} />
           <div className="d-flex align-items-center justify-content-center gap-3 mt-3">
             <button className="btn btn-outline-light" type="button" disabled={images.length < 2} onClick={() => carouselInstance.current?.prev()}><FaChevronLeft /> {t('carousel.previous')}</button>
             <span role="status" aria-live="polite" aria-atomic="true">{activeIndex + 1} / {images.length}</span>

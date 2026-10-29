@@ -4,12 +4,12 @@
             "slug": "don-pepe-y-sus-globos",
             "detailPage": true,
             "title": "Don Pepe y sus globos",
-            "imgSrc": "don-pepe.png",
+            "imgSrc": "don-pepe.webp",
             "altText": "portfolio don pepe y sus globos",
             "modalId": "donpepe",
             "description": {
-                "en": "Don Pepe is the host of the hottest game show on the air, where contestants from all over the world clash in intense water balloon fights!<br />What started as a simple plan to scam children has now grown into a legitimate sport, and there can only be one winner. ¿Do you have what it takes?",
-                "es": "Don Pepe es el presentador del programa de concursos más prendido de la tele, donde concursantes de todo el mundo chocan en intensas batallas con bombitas de agua!<br />Lo que empezó como un simple plan para estafar niños se ha convertido en un auténtico deporte, y sólo puede haber un ganador. ¿Podrás lograrlo?"
+                "en": "Don Pepe is the host of the hottest game show on the air, where contestants from all over the world clash in intense water balloon fights!<br />What started as a simple plan to scam children has now grown into a legitimate sport, and there can only be one winner. Do you have what it takes to become Champion?",
+                "es": "Don Pepe es el presentador del programa de concursos más prendido de la tele, donde concursantes de todo el mundo chocan en intensas batallas con bombitas de agua!<br />Lo que empezó como un simple plan para estafar niños se ha convertido en un auténtico deporte, y sólo puede haber un ganador. ¿Tienes lo que se requiere para ser Campeón?"
             },
             "link": [{"store":"Steam", "icon": "steam","url":"https://store.steampowered.com/app/4079810/Don_Pepe_y_sus_globos/"}],
             "playOn": {
@@ -17,18 +17,18 @@
                 "es": "Agregar a la lista de deseos de"
             },
             "summary": {
-                "en": "Become a water balloon champion in a projectile arena fighter for up to four players.",
-                "es": "Conviértete en campeón de las bombitas de agua en un arena fighter de proyectiles para hasta cuatro jugadores."
+                "en": "Welcome to Don Pepe's hit game show! Grab your water balloons and outsmart your rivals in this explosive, fast-paced party brawler for up to 4 players.",
+                "es": "Bienvenido al programa estelar de Don Pepe! Toma tus bombitas de agua y vence a tus rivales en este rápido y explosivo party brawler para hasta 4 jugadores."
             },
             "features": {
-                "en": ["Fight alone or with up to four players, locally or online.", "Choose characters, stages and rules in Battle Mode.", "Beat your high score in Arcade Mode and become the champion.", "Discover Don Pepe's story in Story Mode.", "Set up your own competition in Tournament Mode.", "Throw, run, roll and use items to gain an advantage in every match."],
-                "es": ["Combate en solitario o con hasta cuatro jugadores, de forma local o en línea.", "Escoge personajes, escenarios y reglas en el Modo Batalla.", "Supera tu mejor puntuación en el Modo Arcade y conviértete en campeón.", "Descubre la historia de Don Pepe en el Modo Historia.", "Organiza tu propia competencia en el Modo Torneo.", "Lanza, corre, rueda y utiliza objetos para obtener ventaja en cada enfrentamiento."]
+                "en": ["Intense water balloon fights in a 2.5D style with colorful characters and a catchy soundtrack.", "Choose from a variety of characters and stages, with new content being released periodically.", "Duke it out with your friends both locally or online in Battle Mode!", "Take your favorite character to the top in Arcade Mode and become the new champion!", "Discover the secrets behind Don Pepe and this whole water balloon sport thing in Story Mode (coming soon)."],
+                "es": ["Intensas batallas de bombitas de agua en un estilo 2.5D con personajes coloridos y una banda sonora pegajosa.","Escoge entre una variedad de personajes y etapas, con contenido nuevo siendo agregado periódicamente.","Pelea con tus amigos tanto en local como en línea en el Modo Batalla!","Lleva a tu personaje favorito a la cima en el Modo Arcade y conviértete en el nuevo campeón!","Descubre los secretos tras Don Pepe y todo este asunto de las bombitas de agua en Modo Historia (próximamente)."]
             },
             "detailImages": {
                 "folder": "don-pepe-y-sus-globos",
-                "hero": "pepe_header.jpg",
-                "logo": "library_logo.png",
-                "gallery": ["gameplay_01.jpg", "gameplay_02.jpg", "gameplay_03.jpg", "cover_horizontal.jpg"]
+                "hero": "pepe_header.webp",
+                "logo": "library_logo.webp",
+                "gallery": ["gameplay_01.webp", "gameplay_02.webp", "gameplay_03.webp", "cover_horizontal.webp"]
             },
             "detailLinks": [
                 { "url": "https://store.steampowered.com/app/4079810/Don_Pepe_y_sus_globos/", "primary": true, "label": { "en": "View on Steam", "es": "Ver en Steam" } },
@@ -43,7 +43,7 @@
         },
         {
             "title": "LongaMóvil",
-            "imgSrc": "longamovil.png",
+            "imgSrc": "longamovil.webp",
             "altText": "portfolio longamovil",
             "modalId": "lonvamovil",
             "description": {
@@ -58,7 +58,7 @@
         },
         {
             "title": "Eco",
-            "imgSrc": "eco.png",
+            "imgSrc": "eco.webp",
             "altText": "portfolio eco",
             "modalId": "eco",
             "description": {
@@ -73,7 +73,7 @@
         },
         {
             "title": "Picoteo",
-            "imgSrc": "picoteo.png",
+            "imgSrc": "picoteo.webp",
             "altText": "portfolio picoteo",
             "modalId": "picoteo",
             "description": {
@@ -88,7 +88,7 @@
         },
         {
             "title": "You're Next (DEMO)",
-            "imgSrc": "youre-next.png",
+            "imgSrc": "youre-next.webp",
             "altText": "portfolio you're next",
             "modalId": "yourenext",
             "description": {
@@ -103,7 +103,7 @@
         },
         {
             "title": "Blade of the Overlord",
-            "imgSrc": "blade.png",
+            "imgSrc": "blade.webp",
             "altText": "portfolio blade of the overlord",
             "modalId": "bladeoftheoverlord",
             "description": {
