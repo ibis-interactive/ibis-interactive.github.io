@@ -1,11 +1,11 @@
 {
-  "images/portfolio/don-pepe.webp": [
+  "images/games/don-pepe.webp": [
     [
-      "images/portfolio/don-pepe-480.webp",
+      "images/games/don-pepe-480.webp",
       480
     ],
     [
-      "images/portfolio/don-pepe.webp",
+      "images/games/don-pepe.webp",
       600
     ]
   ],
@@ -89,41 +89,41 @@
       1232
     ]
   ],
-  "images/portfolio/longamovil.webp": [
+  "images/games/longamovil.webp": [
     [
-      "images/portfolio/longamovil-480.webp",
+      "images/games/longamovil-480.webp",
       480
     ],
     [
-      "images/portfolio/longamovil-960.webp",
+      "images/games/longamovil-960.webp",
       960
     ],
     [
-      "images/portfolio/longamovil.webp",
+      "images/games/longamovil.webp",
       1260
     ]
   ],
-  "images/portfolio/eco.webp": [
+  "images/games/eco.webp": [
     [
-      "images/portfolio/eco.webp",
+      "images/games/eco.webp",
       315
     ]
   ],
-  "images/portfolio/picoteo.webp": [
+  "images/games/picoteo.webp": [
     [
-      "images/portfolio/picoteo.webp",
+      "images/games/picoteo.webp",
       315
     ]
   ],
-  "images/portfolio/youre-next.webp": [
+  "images/games/youre-next.webp": [
     [
-      "images/portfolio/youre-next.webp",
+      "images/games/youre-next.webp",
       315
     ]
   ],
-  "images/portfolio/blade.webp": [
+  "images/games/blade.webp": [
     [
-      "images/portfolio/blade.webp",
+      "images/games/blade.webp",
       315
     ]
   ],

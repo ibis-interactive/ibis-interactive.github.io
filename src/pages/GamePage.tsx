@@ -1,3 +1,4 @@
+import { useLayoutEffect } from 'react'
 import { imageSrcSet } from '../data/responsive-images'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -11,6 +12,9 @@ import type { Game, Language } from '../types/content'
 
 export default function GamePage() {
   const { slug } = useParams()
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+  }, [slug])
   const { t, i18n } = useTranslation()
   const language = (i18n.language.startsWith('en') ? 'en' : 'es') as Language
   const game = (gamesData.games as Game[]).find((item) => item.detailPage && item.slug === slug)
