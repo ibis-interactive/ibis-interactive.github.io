@@ -1,0 +1,24 @@
+.not-found { min-height: 100svh; display: flex; flex-direction: column; background: var(--accent-color); color: var(--dark-color); }
+.not-found-header { width: min(1200px, 100%); margin: 0 auto; padding: 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.not-found-brand { color: inherit; font-family: 'Cairo Play', sans-serif; font-size: 20px; font-weight: 500; text-decoration: none; }
+.not-found-stage { flex: 1; width: min(1120px, calc(100% - 48px)); margin: auto; display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 48px; padding: 32px 0; }
+.not-found-art { position: relative; isolation: isolate; display: grid; place-items: center; }
+.not-found-art img { display: block; position: relative; width: 100%; max-width: 520px; height: auto; }
+.not-found-code { position: absolute; z-index: -1; top: 0; font-family: 'Play', sans-serif; font-size: clamp(120px, 19vw, 260px); line-height: 1; font-weight: 700; color: var(--main-color); }
+.not-found-copy h1 { font-size: clamp(32px, 4vw, 56px); line-height: 1.15; color: inherit; margin: 0 0 20px; }
+.not-found-copy p { max-width: 440px; font-size: 17px; line-height: 1.7; margin: 0 0 28px; }
+.not-found-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.not-found-actions a { display: inline-flex; justify-content: center; align-items: center; min-height: 48px; padding: 12px 20px; border-radius: 8px; font-weight: 700; text-decoration: none; }
+.not-found-primary { background: var(--main-color); color: var(--white-color); border: 1px solid var(--main-color); }
+.not-found-primary:hover { background: var(--main-hover-color); color: var(--white-color); }
+.not-found :is(a):focus-visible { outline: 3px solid var(--focus-color); outline-offset: 4px; }
+.not-found-footer { padding: 20px 24px; text-align: center; font-size: 13px; }
+@media (max-width: 700px) {
+  .not-found-header { padding: 16px; flex-wrap: wrap; }
+  .not-found-brand { font-size: 19px; }
+  .not-found-stage { width: calc(100% - 32px); grid-template-columns: 1fr; gap: 20px; text-align: center; }
+  .not-found-art img { max-width: 310px; }
+  .not-found-code { font-size: 170px; }
+  .not-found-copy p { margin-left: auto; margin-right: auto; }
+  .not-found-actions { justify-content: center; }
+}

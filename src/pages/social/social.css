@@ -26,18 +26,50 @@
   .social-toolbar { font-size: 12px; }
 }
 
-.social-page { min-height: 100vh; padding: 24px 16px; background: var(--page-background-color); color: var(--dark-color); }
+html:has(.social-page), body:has(.social-page) {
+  background: var(--page-background-color);
+  overscroll-behavior-y: none;
+}
+html:has(.social-qr-modal[open]) { overflow: hidden; }
+.social-page {
+  box-sizing: border-box;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 24px 16px;
+  background: var(--page-background-color);
+  color: var(--dark-color);
+}
 .social-page a { text-decoration: none; }
 .social-page button { font: inherit; cursor: pointer; }
 .social-page :is(a, button):focus-visible { outline: 3px solid var(--focus-color); outline-offset: 4px; }
 .social-page .social-toolbar { max-width: 700px; flex-wrap: wrap; }
 .social-page .social-toolbar > a { color: var(--dark-color); }
 .social-page .social-toolbar button { border-color: var(--dark-color); color: var(--dark-color); }
-.social-page .social-toolbar button#copy-button, 
+.social-page .social-toolbar button#copy-button,
 .social-page .social-toolbar button#qr-button { font-size: 16px; }
 #back-link { font-size: 20px; display: inline-flex;}
 .social-page .social-toolbar button:hover { background: var(--accent-color); color: var(--dark-color); }
-.social-notice { min-height: 20px; margin: 12px 0 0; text-align: center; font-size: 13px; }
+.social-toast {
+  position: fixed;
+  z-index: 1000;
+  top: calc(16px + env(safe-area-inset-top, 0px));
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  width: min(420px, calc(100% - 32px));
+  max-width: calc(100% - 32px);
+  margin: 0;
+  padding: 16px 24px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: var(--dark-color);
+  color: var(--white-color);
+  box-shadow: 0 8px 28px rgb(0 0 0 / 24%);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  pointer-events: none;
+}
 .social-page .social-brand { padding-top: 16px; }
 .social-page .social-networks a:hover { color: var(--link-hover-color); }
 .social-page .social-destinations a:hover { background: var(--accent-color); color: var(--dark-color); }

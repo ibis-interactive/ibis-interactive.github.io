@@ -1,4 +1,4 @@
-﻿import { useEffect, useId, useRef } from 'react'
+import { useEffect, useId, useRef } from 'react'
 import type { SocialCopy } from './content'
 import './SocialQrModal.css'
 
@@ -16,12 +16,34 @@ export default function SocialQrModal({ text, notice, onCopy, onClose }: SocialQ
   useEffect(() => {
     const dialog = dialogRef.current
     if (!dialog) return
-    const overflow = document.body.style.overflow
+    const body = document.body
+    const root = document.documentElement
+    const rootOverflow = root.style.overflow
+    const preventTouchScroll = (event: TouchEvent) => {
+      if (event.touches.length === 1) event.preventDefault()
+    }
+    const scrollY = window.scrollY
+    const previous = {
+      position: body.style.position,
+      top: body.style.top,
+      width: body.style.width,
+      overflow: body.style.overflow,
+    }
+    Object.assign(body.style, {
+      position: 'fixed',
+      top: `-${scrollY}px`,
+      width: '100%',
+      overflow: 'hidden',
+    })
+    root.style.overflow = 'hidden'
+    document.addEventListener('touchmove', preventTouchScroll, { passive: false })
     dialog.showModal()
-    document.body.style.overflow = 'hidden'
     return () => {
       dialog.close()
-      document.body.style.overflow = overflow
+      document.removeEventListener('touchmove', preventTouchScroll)
+      root.style.overflow = rootOverflow
+      Object.assign(body.style, previous)
+      window.scrollTo({ top: scrollY, behavior: 'instant' })
     }
   }, [])
 

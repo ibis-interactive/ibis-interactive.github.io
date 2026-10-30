@@ -1,10 +1,17 @@
 .social-qr-modal {
+  position: fixed;
+  inset: auto;
+  top: 50vh;
+  top: 50dvh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overscroll-behavior: contain;
   box-sizing: border-box;
   width: min(400px, calc(100% - 32px));
   max-width: calc(100% - 32px);
   max-height: calc(100vh - 32px);
   max-height: calc(100dvh - 32px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
-  margin: auto;
+  margin: 0;
   padding: 16px;
   overflow-y: auto;
   border: 0;

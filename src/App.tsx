@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
+const NotFoundPage = lazy(() => import('./pages/not-found/NotFoundPage'))
 const HomePage = lazy(() => import('./pages/HomePage'))
 const PrivacyPage = lazy(() => import('./pages/PrivacyPage'))
 const GamePage = lazy(() => import('./pages/GamePage'))
@@ -13,6 +14,6 @@ export default function App() {
     <Route path="/politicas-privacidad" element={<PrivacyPage />} />
     <Route path="/juegos/:slug" element={<GamePage />} />
     <Route path="/juegos/:gameId/changelogs" element={<ChangelogsPage />} />
-    <Route path="*" element={<HomePage />} />
+    <Route path="*" element={<NotFoundPage />} />
   </Routes></Suspense>
 }

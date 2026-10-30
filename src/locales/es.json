@@ -1,8 +1,14 @@
 {
+  "notFound": {
+    "title":  "Llegaste al final del camino",
+    "text":  "La página que buscas no está por aquí. Volvamos a un lugar conocido.",
+    "home":  "Volver al inicio",
+    "footer":  "Esta página no existe pero la aventura continua."
+},
   "changelogs": {"button": "Changelogs", "title": "Changelogs de {{game}}", "version": "Versión {{version}}", "empty": "Todavía no hay changelogs publicados.", "back": "Volver al juego", "news": "Novedades", "improvements": "Mejoras", "fixes": "Correcciones"},
   "brand": { "name": "Ibis Interactive", "homeLabel": "Ir al inicio de Ibis Interactive" },
   "nav": { "home": "Inicio", "about": "Nosotros", "portfolio": "Juegos", "team": "Equipo", "open": "Abrir navegación" },
-  "footer": { "presskit": "Presskit", "privacy": "Política de privacidad", "contact": "Contáctanos y síguenos en:" },
+  "footer": { "presskit": "Presskit", "privacy": "Política de privacidad", "contact": "Contáctanos y síguenos en:", "social": "Redes sociales" },
   "home": { "portfolio": "Nuestros juegos" },
   "about": { "title": "Acerca de Nosotros", "subtitle": "¿Quiénes somos?", "description": "Ibis Interactive es un grupo de amantes de los videojuegos y artes visuales ubicado en Valdivia, Chile. Con orígenes en las Global Game Jams desde 2020, el grupo creció y tomó impulso en 2023, formalizándose en 2025.<br/>Ibis busca crear experiencias únicas, con historias cautivantes y arte icónico.", "video": "Presentación de Ibis Interactive" },
   "portfolio": { "title": "Nuestros Juegos", "text": "Una pequeña lista de nuestros juegos" },
